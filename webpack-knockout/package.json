@@ -1,0 +1,15 @@
+{
+  "name": "devextreme-webpack-knockout",
+  "version": "1.0.0",
+  "description": "DevExtreme with webpack and Knockout example",
+  "dependencies": {
+    "devextreme": "~16.1.2",
+    "jquery": "^2.2.4",
+    "knockout": "^3.4.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  },
+  "author": "DevExpress",
+  "license": "MIT"
+}

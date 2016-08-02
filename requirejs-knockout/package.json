@@ -1,0 +1,14 @@
+{
+  "name": "devextreme-requirejs-knockout",
+  "version": "1.0.0",
+  "description": "DevExtreme with RequireJS and Knockout example",
+  "dependencies": {
+    "devextreme": "~16.1.4",
+    "requirejs": "^2.2.0",
+    "jquery": "^2.2.4",
+    "knockout": "^3.4.0"
+  },
+  "devDependencies": {},
+  "author": "DevExpress",
+  "license": "MIT"
+}

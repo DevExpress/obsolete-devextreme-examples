@@ -1,0 +1,12 @@
+{
+  "name": "devextreme-requirejs-jquery",
+  "version": "1.0.0",
+  "description": "DevExtreme with RequireJS and jQuery example",
+  "dependencies": {
+    "devextreme": "~16.1.4",
+    "jquery": "^2.2.4",
+    "requirejs": "^2.2.0"
+  },
+  "author": "Developer Express Inc.",
+  "license": "MIT"
+}

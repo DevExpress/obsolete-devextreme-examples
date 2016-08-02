@@ -1,0 +1,15 @@
+{
+  "name": "devextreme-requirejs-angular",
+  "version": "1.0.0",
+  "description": "DevExtreme with RequireJS and AngularJS example",
+  "dependencies": {
+    "devextreme": "~16.1.4",
+    "jquery": "^2.2.4",
+    "requirejs": "^2.2.0",
+    "angular": "~1.5.5",
+    "angular-sanitize": "~1.5.5"
+  },
+  "devDependencies": {},
+  "author": "DevExpress",
+  "license": "MIT"
+}

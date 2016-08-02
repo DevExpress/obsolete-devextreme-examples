@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DevExtreme with RequireJS and AngularJS example</title>
+
+  <link rel="stylesheet" type="text/css" href="node_modules/devextreme/dist/css/dx.common.css" />
+  <link rel="stylesheet" type="text/css" href="node_modules/devextreme/dist/css/dx.light.css" />
+  <script src="node_modules/requirejs/require.js"></script>
+</head>
+
+<body>
+  <div ng-controller="myController">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">
+      <div dx-button="buttonOptions"></div>
+    </div>
+  </div>
+  <script>
+    require.config({
+      paths: {
+        "jquery": "node_modules/jquery/dist/jquery",
+        "angular": "node_modules/angular/angular",
+        "angular-sanitize": "node_modules/angular-sanitize/angular-sanitize",
+        "devextreme": "node_modules/devextreme"
+      },
+      shim: {
+        "angular": {
+          deps: ["jquery"],
+          exports: 'angular'
+        },
+        "angular-sanitize": {
+          deps: ["angular"]
+        },
+        "devextreme/integration/angular": {
+          deps: ['angular', 'angular-sanitize']
+        }
+      }
+    });
+
+    require(["angular", "devextreme/ui/dialog", "devextreme/integration/angular", "devextreme/ui/button"], function(angular, dialog) {
+
+      var myApp = angular.module('myApp', ['dx']);
+      myApp.controller("myController", function($scope) {
+        $scope.buttonOptions = {
+          text: "Say 'Hello world'",
+          onClick: function() {
+            dialog.alert('Hello world!', '', false);
+          }
+        };
+      });
+
+      angular.bootstrap(document, ['myApp']);
+    });
+  </script>
+</body>
+
+</html>
