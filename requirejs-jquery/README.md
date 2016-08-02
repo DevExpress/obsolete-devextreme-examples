@@ -11,7 +11,7 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
 
 2. Go to the project folder   
  ``` text
- cd devextreme-requirejs-jquery
+ cd devextreme-examples/requirejs-jquery
  ```
 
 3. Install the required modules  

@@ -6,12 +6,12 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
 
 1. Clone the repository
  ``` text
- git clone https://github.com/devexpress/devextreme-jspm-angular.git
+ git clone https://github.com/devexpress/devextreme-examples.git
  ```
- 
+
 2. Go to the project folder
  ``` text
- cd devextreme-jspm-angular
+ cd devextreme-examples/jspm-angular
  ```
 
 3. Install the required modules

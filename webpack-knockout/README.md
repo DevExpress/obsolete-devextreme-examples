@@ -23,7 +23,7 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
  ``` text  
  webpack
  ```
- 
+
 5. Open `index.html` in your browser
 
 ## Resources
