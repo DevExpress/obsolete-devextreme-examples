@@ -1,6 +1,6 @@
 # DevExtreme with jspm and jQuery example
 
-This project demonstrates how to use DevExtreme widgets loading only modules with the required functionality. This demo shows the dxButton widget with the alert dialog as an example. Here, the jQuery approach is used. Example requires jspm package manager installed.
+This project demonstrates how to use DevExtreme widgets loading only modules with the required functionality. This demo shows the dxButton widget with the alert dialog as an example. Here, the [jQuery](http://jquery.com/) approach is used. The example requires installed [jspm](http://jspm.io/) package manager.
 
 ## Getting Started
 
@@ -34,8 +34,3 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
 ## Resources
 
 For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?version=16_1&approach=jQuery).
-
-For information on 3-rd party libraries and frameworks, see:
-
-- [jspm](http://jspm.io/)
-- [jQuery](http://jquery.com/)

@@ -1,6 +1,6 @@
 # DevExtreme with webpack and AngularJS example
 
-This project demonstrates how to use DevExtreme widgets loading only modules with the required functionality. This demo shows the dxButton widget with the alert dialog as an example. Here, the AngularJS approach is used. Example requires webpack installed.
+This project demonstrates how to use DevExtreme widgets loading only modules with the required functionality. This demo shows the dxButton widget with the alert dialog as an example. Here, the [AngularJS](https://angularjs.org/) approach is used. The example requires installed [webpack](http://webpack.github.io/docs/).
 
 ## Getting Started
 
@@ -29,9 +29,3 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
 ## Resources
 
 For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?version=16_1&approach=AngularJS).
-
-For information on 3-rd party libraries and frameworks, see:
-
-- [webpack](http://webpack.github.io/docs/)
-- [jQuery](http://jquery.com/)
-- [AngularJS](https://angularjs.org/)
