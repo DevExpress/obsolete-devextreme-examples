@@ -1,6 +1,6 @@
 # DevExtreme with webpack and jQuery example
 
-This project demonstrates how to use DevExtreme widgets loading only modules with the required functionality. This demo shows the dxButton widget with the alert dialog as an example. Here, the jQuery approach is used.
+This project demonstrates how to use DevExtreme widgets loading only modules with the required functionality. This demo shows the dxButton widget with the alert dialog as an example. Here, the jQuery approach is used. Example requires webpack installed.
 
 ## Getting Started
 

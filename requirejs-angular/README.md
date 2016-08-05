@@ -1,6 +1,7 @@
 # DevExtreme with RequireJS and AngularJS example
 
 This project demonstrates how to use DevExtreme widgets loading only modules with the required functionality. This demo shows the dxButton widget with the alert dialog as an example. Here, the AngularJS approach is used.
+
 ## Getting Started
 
 1. Clone the repository
