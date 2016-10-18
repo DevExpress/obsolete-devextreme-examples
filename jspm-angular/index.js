@@ -2,7 +2,6 @@ import 'devextreme/dist/css/dx.common.css!';
 import 'devextreme/dist/css/dx.light.css!';
 
 import angular from 'angular';
-import angularSanitize from 'angular-sanitize';
 import 'devextreme/integration/angular';
 import dialog from 'devextreme/ui/dialog';
 import 'devextreme/ui/button';

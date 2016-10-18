@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "DevExtreme with RequireJS and jQuery example",
   "dependencies": {
-    "devextreme": "~16.1.4",
-    "jquery": "^2.2.4",
+    "devextreme": "~16.2.1-16286",
+    "jquery": "^3.1.1",
+    "r.js": "^1.0.3",
     "requirejs": "^2.2.0"
+  },
+  "scripts": {
+    "postinstall": "r_js -convert node_modules/devextreme devextreme_amd"
   },
   "author": "Developer Express Inc.",
   "license": "MIT"

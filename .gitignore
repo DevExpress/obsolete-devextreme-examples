@@ -8,5 +8,8 @@ npm-debug.log*
 node_modules
 jspm_packages
 
+# AMD
+devextreme_amd
+
 # Webpack bundles
 bundle.js
