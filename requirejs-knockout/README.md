@@ -14,7 +14,7 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
  cd devextreme-examples/requirejs-knockout
  ```
 
-3. Install the required modules
+3. Install the required modules. This command will also convert the DevExtreme package to the AMD module format by using the npm postinstall script.
  ``` text
  npm install
  ```
