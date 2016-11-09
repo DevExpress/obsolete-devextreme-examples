@@ -1,0 +1,17 @@
+{
+  "name": "devextreme-requirejs-angularjs",
+  "version": "1.0.0",
+  "description": "DevExtreme with RequireJS and AngularJS example",
+  "dependencies": {
+    "devextreme": "~16.2.1-16286",
+    "jquery": "^3.1.1",
+    "requirejs": "^2.2.0",
+    "r.js": "^1.0.3",
+    "angular": "^1.5.5"
+  },
+  "scripts": {
+    "postinstall": "r_js -convert node_modules/devextreme devextreme_amd"
+  },
+  "author": "DevExpress",
+  "license": "MIT"
+}

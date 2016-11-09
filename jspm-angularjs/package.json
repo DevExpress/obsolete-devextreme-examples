@@ -1,0 +1,28 @@
+{
+  "name": "devextreme-jspm-angularjs",
+  "version": "1.0.0",
+  "description": "DevExtreme with jspm and AngularJS example",
+  "main": "index.js",
+  "author": "DevExpress",
+  "license": "MIT",
+  "scripts": {
+    "start": "static"
+  },
+  "devDependencies": {
+    "jspm": "^0.16.35",
+    "node-static": "^0.7.7"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular": "npm:angular@^1.5.7",
+      "css": "github:systemjs/plugin-css@^0.1.22",
+      "devextreme": "npm:devextreme@~16.2.1-16286",
+      "jquery": "npm:jquery@^3.1.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
