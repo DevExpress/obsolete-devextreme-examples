@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>DevExtreme with RequireJS and Knockout example</title>
+
+  <link rel="stylesheet" type="text/css" href="node_modules/devextreme/dist/css/dx.common.css" />
+  <link rel="stylesheet" type="text/css" href="node_modules/devextreme/dist/css/dx.light.css" />
+
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/zone.js/dist/long-stack-trace-zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.js"></script>
+  <script src="config.js"></script>
+
+  <script>
+    System.import('app')
+      .catch(console.error.bind(console));
+  </script>
+</head>
+
+<body>
+  <my-app>
+    loading...
+  </my-app>
+</body>
+
+</html>

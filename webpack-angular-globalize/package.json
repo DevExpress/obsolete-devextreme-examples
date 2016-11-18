@@ -1,0 +1,24 @@
+{
+  "name": "devextreme-webpack-angular-globalize",
+  "version": "1.0.0",
+  "description": "DevExtreme with Webpack and Angular and Globalize example",
+  "dependencies": {
+    "@angular/core": "^2.1.2",
+    "@angular/platform-browser": "^2.1.2",
+    "@angular/platform-browser-dynamic": "^2.1.2",
+    "cldr-data": "^30.0.1",
+    "devextreme-angular": "~16.2.1-alpha.2",
+    "globalize": "^1.1.2",
+    "node-static": "^0.7.9",
+    "reflect-metadata": "^0.1.8",
+    "typescript": "^2.0.8",
+    "zone.js": "^0.6.26"
+  },
+  "author": "DevExpress",
+  "license": "MIT",
+  "devDependencies": {
+    "awesome-typescript-loader": "^2.2.4",
+    "json-loader": "^0.5.4",
+    "webpack": "^2.1.0-beta.25"
+  }
+}

@@ -13,3 +13,6 @@ devextreme_amd
 
 # Webpack bundles
 bundle.js
+
+# TS result
+systemjs-angular-globalize/dist
