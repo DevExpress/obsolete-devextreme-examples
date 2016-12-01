@@ -5,10 +5,7 @@ import 'devextreme/localization/globalize/currency'
 import 'devextreme/localization/globalize/message'
 
 // DevExtreme messages (en messages already included)
-import 'devextreme/localization/de/core.de'
-import 'devextreme/localization/de/widgets-base.de'
-import 'devextreme/localization/de/widgets-web.de'
-import 'devextreme/localization/de/widgets-mobile.de'
+import 'devextreme/dist/js/localization/dx.all.de'
 
 // CLDR data
 import deCaGregorian from 'cldr-data/main/de/ca-gregorian.json!json'
