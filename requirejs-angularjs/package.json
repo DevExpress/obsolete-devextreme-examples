@@ -4,6 +4,7 @@
   "description": "DevExtreme with RequireJS and AngularJS example",
   "dependencies": {
     "devextreme": "~16.2.1-16286",
+    "jquery": "^3.1.1",
     "requirejs": "^2.2.0",
     "r.js": "^1.0.3",
     "angular": "^1.5.5"
