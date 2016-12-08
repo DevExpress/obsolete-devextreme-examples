@@ -7,7 +7,7 @@ import 'devextreme/localization/globalize/currency'
 import 'devextreme/localization/globalize/message'
 
 // DevExtreme messages (en messages already included)
-import 'devextreme/dist/js/localization/dx.all.de'
+import deMessages = require('devextreme/localization/messages/de.json')
 
 // CLDR data
 import deCaGregorian = require('cldr-data/main/de/ca-gregorian.json')
@@ -23,6 +23,8 @@ import numberingSystems = require('cldr-data/supplemental/numberingSystems.json'
 import Globalize = require('globalize');
 
 Globalize.load(
+    deMessages,
+
     deCaGregorian,
     deNumbers,
     deCurrencies,
