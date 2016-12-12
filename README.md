@@ -10,8 +10,6 @@ Used Technologies: | Example Name:
 ------------------ | --------------
 SystemJS with Angular and Globalize | [systemjs-angular-globalize](systemjs-angular-globalize/)
 Webpack with Angular and Globalize | [webpack-angular-globalize](webpack-angular-globalize/)
-DataGrid with WebAPI | [datagrid-webapi](datagrid-webapi/)
-PivotGrid with WebAPI | [pivotgrid-webapi](pivotgrid-webapi/)
 RequireJS with jQuery | [requirejs-jquery](requirejs-jquery/)
 webpack with jQuery | [webpack-jquery](webpack-jquery/)
 jspm with jQuery | [jspm-jquery](jspm-jquery/)
