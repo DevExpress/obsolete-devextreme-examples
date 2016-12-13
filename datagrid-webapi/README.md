@@ -15,7 +15,7 @@ This sample project demonstrates how to configure the DevExtreme DataGrid widget
  git clone https://github.com/devexpress/devextreme-examples.git
  ```
 
-2. Open the devextreme-examples/datagrid-webapi/datagrid-webapi.sln solution in Visual Studio
+2. Open the devextreme-examples/datagrid-webapi/datagrid-webapi.sln solution in Visual Studio 2015 or higher
 
 3. Build and Run the solution
  
