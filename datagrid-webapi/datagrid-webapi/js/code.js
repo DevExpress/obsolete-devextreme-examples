@@ -2,7 +2,7 @@
 
     $("#grid").dxDataGrid({
         height: 800,
-        remoteOperations: true,
+        remoteOperations: { paging: true, filtering: true, sorting: true, grouping: true, summary: true, groupPaging: true },
         dataSource: DevExpress.data.AspNet.createStore({
             key: "OrderID",
             loadUrl: "api/Orders",
@@ -102,7 +102,7 @@
 
     function masterDetailTemplate(container, options) {
         $("<div>").addClass("grid").appendTo(container).dxDataGrid({
-            remoteOperations: { paging: true, filtering: true, sorting: true, grouping: true, summary: true, groupPaging: true },
+            remoteOperations: true,
             dataSource: {
                 filter: ["OrderID", "=", options.key],
                 store: DevExpress.data.AspNet.createStore({
