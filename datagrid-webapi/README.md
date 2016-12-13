@@ -19,4 +19,4 @@ This sample project demonstrates how to configure the DevExtreme DataGrid widget
 
 3. Build and Run the solution
  
-When the application is running you can view/filter/sort/group orders, view order details, add/modify/delete orders or order detail items.
+When the application is running, you can view/filter/sort/group orders, view order details, add/modify/delete orders or order detail items.
