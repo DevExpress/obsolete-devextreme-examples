@@ -1,6 +1,6 @@
-# DataGrid with WebAPI example
+# DataGrid with a WebAPI example
 
-This project demonstrates how to configure the DevExtreme DataGrid widget for working with remote WebAPI data service. In this example, the following DataGrid features are used.
+This sample project demonstrates how to configure the DevExtreme DataGrid widget for working with remote WebAPI data service. In the example, the DataGrid is configured to support the following features.
 
 - Remote Operations (Paging, Sorting, Filtering, Grouping, Summary)
 - Master Detail
