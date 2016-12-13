@@ -9,6 +9,6 @@ This sample project demonstrates how to configure the DevExtreme PivotGrid widge
  git clone https://github.com/devexpress/devextreme-examples.git
  ```
 
-2. Open the devextreme-examples/pivotgrid-webapi/pivotgrid-webapi.sln solution in Visual Studio
+2. Open the devextreme-examples/pivotgrid-webapi/pivotgrid-webapi.sln solution in Visual Studio 2015 or higher
 
 3. Build and Run the solution
