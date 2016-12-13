@@ -2,16 +2,12 @@
 
 A set of sample applications that will help you get started with DevExtreme.
 
-Each example holds a simple application containing a dxButton widget with an alert dialog. It is enough to demonstrate how to link the required DevExtreme modules to the application using [RequireJS](http://requirejs.org/), [SystemJS](https://github.com/systemjs/systemjs/), [webpack](http://webpack.github.io/docs/) or [jspm](http://jspm.io/) with [jQuery](http://jquery.com/), [AngularJS](https://angularjs.org/), [Angular](https://angular.io/) or [Knockout](http://knockoutjs.com/) approach. All examples require Node.js and npm to install [DevExtreme](http://js.devexpress.com/) package and its dependencies. Basic principles of working with these tools would be also helpful.
+##DevExtreme Modules
 
-To use an example, click its name below and follow the instructions.
+Each example in this section holds a simple application containing a dxButton widget with an alert dialog. It is enough to demonstrate how to link the required DevExtreme modules to the application using [RequireJS](http://requirejs.org/), [SystemJS](https://github.com/systemjs/systemjs/), [webpack](http://webpack.github.io/docs/) or [jspm](http://jspm.io/) with [jQuery](http://jquery.com/), [AngularJS](https://angularjs.org/), [Angular](https://angular.io/) or [Knockout](http://knockoutjs.com/) approach. All examples require Node.js and npm to install [DevExtreme](http://js.devexpress.com/) package and its dependencies. Basic principles of working with these tools would be also helpful.
 
 Used Technologies: | Example Name:
 ------------------ | --------------
-SystemJS with Angular and Globalize | [systemjs-angular-globalize](systemjs-angular-globalize/)
-Webpack with Angular and Globalize | [webpack-angular-globalize](webpack-angular-globalize/)
-DataGrid with WebAPI | [datagrid-webapi](datagrid-webapi/)
-PivotGrid with WebAPI | [pivotgrid-webapi](pivotgrid-webapi/)
 RequireJS with jQuery | [requirejs-jquery](requirejs-jquery/)
 webpack with jQuery | [webpack-jquery](webpack-jquery/)
 jspm with jQuery | [jspm-jquery](jspm-jquery/)
@@ -21,3 +17,21 @@ jspm with AngularJS | [jspm-angularjs](jspm-angularjs/)
 RequireJS with Knockout | [requirejs-knockout](requirejs-knockout/)
 webpack with Knockout | [webpack-knockout](webpack-knockout/)
 jspm with Knockout | [jspm-knockout](jspm-knockout/)
+
+##DevExtreme Globalize Integration
+
+The following examples demonstrate how to use DevExtreme Globalize integration in [SystemJS](https://github.com/systemjs/systemjs) and [Webpack](https://github.com/webpack/webpack) environments. Each example in this section holds a simple application containing a DataGrid widget localized to "de" locale.
+
+Used Technologies: | Example Name:
+------------------ | --------------
+SystemJS with Angular and Globalize | [systemjs-angular-globalize](systemjs-angular-globalize/)
+Webpack with Angular and Globalize | [webpack-angular-globalize](webpack-angular-globalize/)
+
+##DataGrid and PivotGrid - Working with Remote Data
+
+Examples in this section demonstrate the use of the DevExtreme DataGrid and PivotGrid widgets with remote data. Each example holds a solution containing a single page application with a DataGrid or PivotGrid widget and a WebAPI service providing data.
+
+Used Technologies: | Example Name:
+------------------ | --------------
+DataGrid with WebAPI | [datagrid-webapi](datagrid-webapi/)
+PivotGrid with WebAPI | [pivotgrid-webapi](pivotgrid-webapi/)
