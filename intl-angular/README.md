@@ -11,23 +11,23 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Step-by-Step guide how this project was created
 
-1. Get angular-cli
+* Get angular-cli
 ```Shell
 npm install -g angular-cli
 ```
-2. Make a new project
+* Make a new project
 ```Shell
 ng new YOUR_PROJECT_NAME
 ```
-3. Switch to your project folder
+* Switch to your project folder
 ```Shell
 cd YOUR_PROJECT_NAME
 ```
-4. Add DevExpress libraries
+* Add DevExpress libraries
 ```Shell
 npm install devextreme devextreme-angular devextreme-intl --save
 ```
-5. Add global styles to **angular-cli.json** ("styles" section)
+* Add global styles to **angular-cli.json** ("styles" section)
 ```json
 "styles": [
     "styles.css",
@@ -36,7 +36,7 @@ npm install devextreme devextreme-angular devextreme-intl --save
     "../node_modules/devextreme/dist/css/dx.light.css"
 ],
 ```
-6. Add service providing data to your application
+* Add service providing data to your application
 ```Shell
 ng g service orders
 ```
@@ -94,7 +94,7 @@ export class OrdersService {
   }
 }
 ```
-7. Import DevExtreme modules to the application and load localization messages.
+* Import DevExtreme modules to the application and load localization messages.
 Open **..src/app/app.module.ts**
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -137,7 +137,7 @@ locale(navigator.language);
 })
 export class AppModule {}
 ```
-8. Setup application component at **../src/app/app.component.ts**
+* Setup application component at **../src/app/app.component.ts**
 ```typescript
 import { Component, OnInit } from '@angular/core';
 //import data service to component
@@ -163,7 +163,7 @@ export class AppComponent implements OnInit {
   }
 }
 ```
-9. Describe the html template at **../src/app/app.template.html**
+* Describe the html template at **../src/app/app.template.html**
 ```html
 <h1>Grid with Intl date and currency formats</h1>
 <dx-data-grid  
@@ -189,7 +189,7 @@ export class AppComponent implements OnInit {
     </dxo-summary>
 </dx-data-grid>
 ```
-10. Run `ng serve` and navigate to [http://localhost:4200/](http://localhost:4200/). Your project is ready!
+* Run `ng serve` and navigate to [http://localhost:4200/](http://localhost:4200/). Your project is ready!
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).  
