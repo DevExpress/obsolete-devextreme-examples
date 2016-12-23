@@ -1,0 +1,23 @@
+<h1>Grid with Intl date and currency formats</h1>
+<dx-data-grid  
+    [dataSource]="orders">
+    <dxi-column 
+        dataField="OrderDate" 
+        dataType="date" 
+        [format]="{ year: 'numeric', month: 'long', day: '2-digit', timeZoneName: 'short' }"></dxi-column>
+    <dxi-column dataField="OrderStatus"></dxi-column>
+    <dxi-column 
+        dataField="SaleAmount" 
+        dataType="number" 
+        [format]="{ style: 'currency', currency: 'JPY', minimumFractionDigits: 2 }"></dxi-column>
+    <dxo-summary>
+        <dxi-total-item 
+            column="OrderDate"
+            summaryType="min"
+            [valueFormat]="{ year: 'numeric', month: 'long', day: '2-digit' }"></dxi-total-item>
+        <dxi-total-item 
+            column="SaleAmount"
+            summaryType="sum"
+            [valueFormat]="{ style: 'currency', currency: 'JPY', minimumFractionDigits: 2 }"></dxi-total-item>
+    </dxo-summary>
+</dx-data-grid>
