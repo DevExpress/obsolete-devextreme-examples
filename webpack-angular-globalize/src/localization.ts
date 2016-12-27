@@ -23,8 +23,6 @@ import numberingSystems = require('cldr-data/supplemental/numberingSystems.json'
 import Globalize = require('globalize');
 
 Globalize.load(
-    deMessages,
-
     deCaGregorian,
     deNumbers,
     deCurrencies,
@@ -35,5 +33,7 @@ Globalize.load(
     currencyData,
     numberingSystems
 );
+
+Globalize.loadMessages(deMessages);
 
 Globalize.locale('de');

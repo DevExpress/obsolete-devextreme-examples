@@ -21,8 +21,6 @@ import numberingSystems from 'cldr-data/supplemental/numberingSystems.json!json'
 import Globalize from 'globalize'
 
 Globalize.load(
-    deMessages,
-
     deCaGregorian,
     deNumbers,
     deCurrencies,
@@ -33,5 +31,7 @@ Globalize.load(
     currencyData,
     numberingSystems
 );
+
+Globalize.loadMessages(deMessages);
 
 Globalize.locale('de');
