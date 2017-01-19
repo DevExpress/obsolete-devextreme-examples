@@ -22,9 +22,9 @@
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
     "core-js": "^2.4.1",
-    "devextreme": "~16.2.3",
-    "devextreme-angular": "~16.2.3-rc.3",
-    "devextreme-intl": "~16.2.3",
+    "devextreme": "~16.2.4",
+    "devextreme-angular": "~16.2.4",
+    "devextreme-intl": "~16.2.4",
     "rxjs": "^5.0.1",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.7.2"
