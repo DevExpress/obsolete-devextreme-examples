@@ -4,7 +4,7 @@
   "description": "DevExtreme with webpack and jQuery example",
   "dependencies": {
     "jquery": "^3.1.1",
-    "devextreme": "~16.2.0"
+    "devextreme": "~16.2.3"
   },
   "devDependencies": {
     "webpack": "^1.13.1"
