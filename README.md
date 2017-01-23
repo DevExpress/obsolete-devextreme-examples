@@ -18,7 +18,19 @@ RequireJS with Knockout | [requirejs-knockout](requirejs-knockout/)
 webpack with Knockout | [webpack-knockout](webpack-knockout/)
 jspm with Knockout | [jspm-knockout](jspm-knockout/)
 
-## DevExtreme Globalize Integration
+## DevExtreme Angular Integration
+
+An example in this section demonstrates how to build an application via rollup with [devextreme-angular](https://github.com/DevExpress/devextreme-angular) using AoT compilation.
+
+Used Technologies: | Example Name:
+------------------ | --------------
+rollup with devextreme-angular | [rollup-angular](rollup-angular/)
+
+Example in this section demonstrate how create an application via angular-cli with [devextreme-angular](https://github.com/DevExpress/devextreme-angular) and [devextreme-intl](https://github.com/DevExpress/devextreme-intl).
+
+Used Technologies: | Example Name:
+------------------ | --------------
+angular-cli with devextreme-angular and devextreme-intl | [intl-angular](intl-angular/)
 
 The following examples demonstrate how to use DevExtreme Globalize integration in [SystemJS](https://github.com/systemjs/systemjs) and [Webpack](https://github.com/webpack/webpack) environments. Each example in this section holds a simple application containing a DataGrid widget localized to "de" locale.
 
@@ -35,11 +47,3 @@ Used Technologies: | Example Name:
 ------------------ | --------------
 DataGrid with WebAPI | [datagrid-webapi](datagrid-webapi/)
 PivotGrid with WebAPI | [pivotgrid-webapi](pivotgrid-webapi/)
-
-## DevExtreme Angular Integration
-
-Example in this section demonstrate how create an application via angular-cli with [devextreme-angular](https://github.com/DevExpress/devextreme-angular) and [devextreme-intl](https://github.com/DevExpress/devextreme-intl).
-
-Used Technologies: | Example Name:
------------------- | --------------
-angular-cli with devextreme-angular and devextreme-intl | [intl-angular](intl-angular/)
