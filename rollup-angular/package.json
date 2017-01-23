@@ -1,7 +1,7 @@
 {
-  "name": "devextreme-webpack-angular-globalize",
+  "name": "devextreme-rollup-angular",
   "version": "1.0.0",
-  "description": "DevExtreme with Webpack and Angular and Globalize example",
+  "description": "DevExtreme with Rollup and Angular example",
   "dependencies": {},
   "author": "DevExpress",
   "license": "MIT",

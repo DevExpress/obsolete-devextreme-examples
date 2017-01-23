@@ -26,6 +26,11 @@ This project demonstrates how to use DevExtreme with Angular in Rollup environme
 
 5. Open `index.html` in your browser
 
+## Notes
+
+This example is based on [AoT Compilation Guide](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html).
+`devextreme-angular` is installed and configured by using the following document: [Using the DevExtreme Angular 2 Integration with Rollup](https://github.com/DevExpress/devextreme-angular/blob/master/docs/using-rollup.md).
+
 ## Resources
 
 For detailed information on DevExtreme Angular integration, see the [DevExtreme Angular repository](https://github.com/DevExpress/devextreme-angular).

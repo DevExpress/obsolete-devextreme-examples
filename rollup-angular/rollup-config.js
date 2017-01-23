@@ -1,10 +1,12 @@
 import * as path from 'path';
 
+import css from 'rollup-plugin-css-only';
+
+import alias from 'rollup-plugin-alias';
+
 import nodeResolve from 'rollup-plugin-node-resolve';
-import commonjs    from 'rollup-plugin-commonjs';
-import uglify      from 'rollup-plugin-uglify';
-import alias       from 'rollup-plugin-alias';
-import css         from 'rollup-plugin-css-only';
+import commonjs from 'rollup-plugin-commonjs';
+import uglify from 'rollup-plugin-uglify';
 
 export default {
     entry: 'dist/main.js',
@@ -13,9 +15,11 @@ export default {
     format: 'iife',
     plugins: [
         css({ output: 'dist/bundle.css' }),
+
         alias({
             jszip: path.join(__dirname, './node_modules/jszip/dist/jszip.min.js')
         }),
+
         nodeResolve({ jsnext: true, module: true }),
         commonjs({
             include: [
@@ -34,4 +38,4 @@ export default {
         }
         console.error(message);
     }
-}
+};
