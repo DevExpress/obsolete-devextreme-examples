@@ -16,3 +16,5 @@ bundle.js
 
 # TS result
 systemjs-angular-globalize/dist
+rollup-angular/dist
+rollup-angular/src/aot
