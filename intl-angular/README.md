@@ -1,6 +1,6 @@
 # Intl-Angular
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) and demonstrates how you can create a simple application using [devextrime-angular](https://github.com/DevExpress/devextreme-angular) with localization and [devextreme-intl](https://github.com/DevExpress/devextreme-intl) formats.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) and demonstrates how you can create a simple application using [devextreme-angular](https://github.com/DevExpress/devextreme-angular) with localization and [devextreme-intl](https://github.com/DevExpress/devextreme-intl) formats.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
