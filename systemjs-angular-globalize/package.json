@@ -3,22 +3,22 @@
   "version": "1.0.0",
   "description": "DevExtreme with SystemJS and Angular and Globalize example",
   "dependencies": {
-    "@angular/core": "^2.2.4",
-    "@angular/platform-browser": "^2.2.4",
-    "@angular/platform-browser-dynamic": "^2.2.4",
-    "@angular/common": "^2.2.4",
-    "@angular/compiler": "^2.2.4",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
     "cldr-data": "^30.0.1",
-    "devextreme-angular": "~16.2.4",
-    "devextreme": "~16.2.4",
+    "devextreme-angular": "~17.1.2-0",
+    "devextreme": "~17.1.2-0",
     "rxjs": "^5.0.0",
     "globalize": "^1.1.2",
     "node-static": "^0.7.9",
     "reflect-metadata": "^0.1.8",
     "systemjs": "^0.19.40",
     "systemjs-plugin-json": "^0.2.2",
-    "typescript": "2.1.1",
-    "zone.js": "^0.6.26"
+    "typescript": "2.2.0",
+    "zone.js": "^0.8.9"
   },
   "scripts": {
     "start": "static"

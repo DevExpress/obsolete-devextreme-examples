@@ -19,18 +19,13 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
  npm install
  ```
 
-4. Install the required jspm modules
- ``` text
- jspm install
- ```
-
-5. Use the development server
+4. Use the development server
  ``` text
  npm start
  ```
 
-6. Open `http://127.0.0.1:8080/` in your browser
+5. Open `http://127.0.0.1:8080/` in your browser
 
 ## Resources
 
-For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?version=16_1&approach=jQuery).
+For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?version=17_1&approach=jQuery).
