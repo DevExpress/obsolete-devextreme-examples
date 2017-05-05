@@ -1,5 +1,4 @@
 var angular = require('angular');
-require('angular-sanitize');
 
 var dialog = require('devextreme/ui/dialog');
 

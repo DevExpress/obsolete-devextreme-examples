@@ -28,4 +28,4 @@ This project demonstrates how to use DevExtreme Globalize integration in SystemJ
 
 ## Resources
 
-For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?version=16_1&approach=Knockout).
+For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?version=17_1&approach=Knockout).
