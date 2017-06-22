@@ -1,4 +1,5 @@
 System.config({
+  meta: {typescript: {format: 'global'}},
   transpiler: 'typescript',
   typescriptOptions: {
     emitDecoratorMetadata: true
