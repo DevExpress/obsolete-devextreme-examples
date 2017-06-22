@@ -1,6 +1,6 @@
 # Intl-Angular
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) and demonstrates how you can create a simple application using [devextreme-angular](https://github.com/DevExpress/devextreme-angular) with localization and [devextreme-intl](https://github.com/DevExpress/devextreme-intl) formats.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) and demonstrates how you can create a simple application using [devextreme-angular](https://github.com/DevExpress/devextreme-angular) with localization and [devextreme-intl](https://github.com/DevExpress/devextreme-intl) formats.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -11,9 +11,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Step-by-Step guide how this project was created
 
-* Get angular-cli
+* Get Angular CLI
 ```Shell
-npm install -g angular-cli
+npm install -g @angular/cli
 ```
 * Make a new project
 ```Shell
@@ -192,5 +192,5 @@ export class AppComponent implements OnInit {
 * Run `ng serve` and navigate to [http://localhost:4200/](http://localhost:4200/). Your project is ready!
 
 ## Further help
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).  
+To get more help on the `@angular/cli` use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).  
 To get more help on the `devextreme-angular` check out the [devextreme-angular README](https://github.com/DevExpress/devextreme-angular/blob/master/README.md).
