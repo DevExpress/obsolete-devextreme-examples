@@ -8,10 +8,11 @@
   "devDependencies": {
     "@angular/common": "^2.4.4",
     "@angular/compiler": "^2.4.4",
+    "@angular/compiler-cli": "^2.4.4",
     "@angular/core": "^2.4.4",
     "@angular/platform-browser": "^2.4.4",
     "@angular/platform-browser-dynamic": "^2.4.4",
-    "@angular/compiler-cli": "^2.4.4",
+    "@types/jquery": "ts2.1",
     "core-js": "^2.4.1",
     "devextreme": "~16.2.4",
     "devextreme-angular": "~16.2.4",

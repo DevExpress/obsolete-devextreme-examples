@@ -28,9 +28,12 @@ module.exports = {
       },
       {
         test: /\.ts$/,
-        loaders: [
-          'awesome-typescript-loader'
-        ]
+        loader: 'awesome-typescript-loader',
+        options: {
+          "forkChecker": true,
+          "useWebpackText": true,
+          "compiler": "typescript"
+        }
       },
       {
         test: /\.json$/,

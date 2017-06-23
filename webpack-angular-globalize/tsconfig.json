@@ -12,9 +12,5 @@
   },
   "filesGlob": [
     "src/**/*.ts"
-  ],
-  "awesomeTypescriptLoaderOptions": {
-    "forkChecker": true,
-    "useWebpackText": true
-  }
+  ]
 }

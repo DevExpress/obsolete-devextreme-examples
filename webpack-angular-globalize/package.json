@@ -3,29 +3,30 @@
   "version": "1.0.0",
   "description": "DevExtreme with Webpack and Angular and Globalize example",
   "dependencies": {
+    "@angular/common": "^2.2.4",
+    "@angular/compiler": "^2.2.4",
     "@angular/core": "^2.2.4",
     "@angular/platform-browser": "^2.2.4",
     "@angular/platform-browser-dynamic": "^2.2.4",
-    "@angular/common": "^2.2.4",
-    "@angular/compiler": "^2.2.4",
     "cldr-data": "^30.0.1",
-    "devextreme-angular": "~16.2.4",
     "devextreme": "~16.2.4",
-    "rxjs": "^5.0.0",
+    "devextreme-angular": "~16.2.4",
     "globalize": "^1.1.2",
     "node-static": "^0.7.9",
     "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.0",
     "typescript": "2.1.1",
     "zone.js": "^0.6.26"
   },
   "author": "DevExpress",
   "license": "MIT",
   "devDependencies": {
+    "@types/jquery": "ts2.1",
     "awesome-typescript-loader": "^2.2.4",
-    "json-loader": "^0.5.4",
-    "webpack": "^2.1.0-beta.25",
     "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
     "style-loader": "^0.13.1",
-    "file-loader": "^0.9.0"
+    "webpack": "^2.1.0-beta.25"
   }
 }
