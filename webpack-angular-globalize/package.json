@@ -15,7 +15,7 @@
     "globalize": "^1.1.2",
     "node-static": "^0.7.9",
     "reflect-metadata": "^0.1.8",
-    "typescript": "2.2.0",
+    "typescript": "^2.3.0",
     "zone.js": "^0.8.9"
   },
   "author": "DevExpress",
