@@ -13,7 +13,6 @@ namespace datagrid_webapi.Models
         public Customer()
         {
             Orders = new HashSet<Order>();
-            CustomerDemographics = new HashSet<CustomerDemographic>();
         }
 
         [StringLength(5)]
@@ -53,9 +52,5 @@ namespace datagrid_webapi.Models
         [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }
-
-        [JsonIgnore]
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CustomerDemographic> CustomerDemographics { get; set; }
     }
 }

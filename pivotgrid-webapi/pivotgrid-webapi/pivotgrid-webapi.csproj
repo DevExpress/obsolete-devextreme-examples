@@ -138,17 +138,13 @@
     </Compile>
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\CustomerDemographic.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Northwind.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Order_Detail.cs" />
     <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\Region.cs" />
     <Compile Include="Models\Shipper.cs" />
     <Compile Include="Models\Supplier.cs" />
-    <Compile Include="Models\Territory.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -163,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -179,7 +176,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63429</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63429/</IISUrl>
+          <IISUrl>http://localhost:63430/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
