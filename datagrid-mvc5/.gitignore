@@ -1,0 +1,7 @@
+.vs
+bin
+obj
+*.user
+packages
+Northwind_log.ldf
+datagrid-mvc5/lib
