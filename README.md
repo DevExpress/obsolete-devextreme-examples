@@ -41,9 +41,10 @@ Webpack with Angular and Globalize | [webpack-angular-globalize](webpack-angular
 
 ## DataGrid and PivotGrid - Working with Remote Data
 
-Examples in this section demonstrate the use of the DevExtreme DataGrid and PivotGrid widgets with remote data. Each example holds a solution containing a single page application with a DataGrid or PivotGrid widget and a WebAPI service providing data.
+Examples in this section demonstrate the use of the DevExtreme DataGrid and PivotGrid widgets with remote data. Each example holds a solution containing a single page application with a DataGrid or PivotGrid widget that works with remote data served by a Web API or MVC 5 controller.
 
 Used Technologies: | Example Name:
 ------------------ | --------------
 DataGrid with WebAPI | [datagrid-webapi](datagrid-webapi/)
 PivotGrid with WebAPI | [pivotgrid-webapi](pivotgrid-webapi/)
+DataGrid in an MVC 5 App | [datagrid-mvc5](datagrid-mvc5/)
