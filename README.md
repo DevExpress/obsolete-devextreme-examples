@@ -45,6 +45,6 @@ Examples in this section demonstrate the use of the DevExtreme DataGrid and Pivo
 
 Used Technologies: | Example Name:
 ------------------ | --------------
-DataGrid with WebAPI | [datagrid-webapi](datagrid-webapi/)
-PivotGrid with WebAPI | [pivotgrid-webapi](pivotgrid-webapi/)
+DataGrid with Web API | [datagrid-webapi](datagrid-webapi/)
+PivotGrid with Web API | [pivotgrid-webapi](pivotgrid-webapi/)
 DataGrid in an MVC 5 App | [datagrid-mvc5](datagrid-mvc5/)
