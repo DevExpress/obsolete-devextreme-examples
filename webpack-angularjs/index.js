@@ -2,6 +2,7 @@ var angular = require('angular');
 
 var dialog = require('devextreme/ui/dialog');
 
+require('devextreme/integration/jquery');
 require('devextreme/integration/angular');
 require('devextreme/ui/button');
 
