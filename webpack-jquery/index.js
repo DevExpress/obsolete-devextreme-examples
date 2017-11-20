@@ -1,6 +1,7 @@
 var $ = require('jquery');
 var dialog = require('devextreme/ui/dialog');
 
+require('devextreme/integration/jquery');
 require('devextreme/ui/button');
 
 $("#myButton").dxButton({

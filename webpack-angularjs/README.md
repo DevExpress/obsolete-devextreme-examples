@@ -19,7 +19,7 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
  npm install
  ```
 
-4. Bundle the modules   
+4. Bundle the modules
  ``` text
  webpack
  ```
@@ -28,4 +28,4 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
 
 ## Resources
 
-For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?version=17_1&approach=AngularJS).
+For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?approach=AngularJS).

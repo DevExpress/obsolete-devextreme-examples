@@ -9,13 +9,13 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
  git clone https://github.com/devexpress/devextreme-examples.git
  ```
 
-2. Go to the project folder   
+2. Go to the project folder
  ``` text
  cd devextreme-examples/requirejs-jquery
  ```
 
 3. Install the required modules. This command will also convert the DevExtreme package to the AMD module format by using the npm postinstall script.
- ``` text  
+ ``` text
  npm install
  ```
 
@@ -23,4 +23,4 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
 
 ## Resources
 
-For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?version=17_1&approach=jQuery).
+For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?approach=jQuery).

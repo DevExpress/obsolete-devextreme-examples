@@ -4,22 +4,22 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
 
 ## Getting Started
 
-1. Clone the repository   
+1. Clone the repository
  ``` text
  git clone https://github.com/devexpress/devextreme-examples.git
  ```
 
 2. Go to the project folder
- ``` text  
+ ``` text
  cd devextreme-examples/webpack-jquery
   ```
 
-3. Install the required modules   
+3. Install the required modules
  ``` text
- npm install  
+ npm install
  ```
 
-4. Bundle the modules   
+4. Bundle the modules
  ``` text
  webpack
  ```
@@ -28,4 +28,4 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
 
 ## Resources
 
-For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?version=17_1&approach=jQuery).
+For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?approach=jQuery).
