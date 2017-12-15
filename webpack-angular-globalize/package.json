@@ -8,7 +8,7 @@
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
-    "cldr-data": "^30.0.1",
+    "cldr-data": ">30.0.1",
     "devextreme-angular": "~17.2.3",
     "devextreme": "~17.2.3",
     "rxjs": "^5.0.0",
