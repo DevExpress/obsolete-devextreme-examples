@@ -16,7 +16,7 @@ export class AppComponent {
     domAdapter.inject({
       listen: function(element) {
         if(element.window === element) {
-          return;
+          return function() {};
         }
         return renderer2.listen.apply(renderer2, arguments);
       }
