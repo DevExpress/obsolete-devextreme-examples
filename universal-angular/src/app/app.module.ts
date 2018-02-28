@@ -9,7 +9,8 @@ import {
   DxPopupModule,
   DxLoadIndicatorModule,
   DxContextMenuModule,
-  DxTemplateModule
+  DxTemplateModule,
+  DxDataGridModule
 } from 'devextreme-angular';
 
 import { AppComponent } from './app.component';
@@ -28,7 +29,8 @@ import { AppComponent } from './app.component';
     DxPopupModule,
     DxLoadIndicatorModule,
     DxContextMenuModule,
-    DxTemplateModule
+    DxTemplateModule,
+    DxDataGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
