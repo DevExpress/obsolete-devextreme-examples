@@ -1,0 +1,6 @@
+.overlay-target {
+  border: 1px solid gray;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}

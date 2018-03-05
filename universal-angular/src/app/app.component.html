@@ -1,78 +1,16 @@
-<dx-button text="click" icon="plus"></dx-button>
-<dx-switch></dx-switch>
-<dx-check-box [value]="true"></dx-check-box>
-<dx-load-indicator></dx-load-indicator>
-<dx-context-menu [visible]="true"></dx-context-menu>
-<dx-popup [visible]="true">Some content</dx-popup>
-<dx-chart></dx-chart>
-
-<dx-data-grid
-  [width]="1000"
-  [height]="300"
-  keyExpr="ID"
-  [dataSource]="employees"
-  [allowColumnReordering]="false"
-  [allowColumnResizing]="false"
-  [columnAutoWidth]="true">
-
-  <dxo-filter-row [visible]="true"></dxo-filter-row>
-  <dxo-header-filter [visible]="true"></dxo-header-filter>
-  <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
-  <dxo-column-fixing [enabled]="false"></dxo-column-fixing>
-  <dxo-master-detail [enabled]="true"></dxo-master-detail>
-  <dxo-scrolling mode="virtual"></dxo-scrolling>
-
-  <dxi-column
-      caption="Employee"
-      [fixed]="false"
-      [calculateCellValue]="calculateCellValue"
-  ></dxi-column>
-  <dxi-column dataField="BirthDate" dataType="date" sortOrder="asc"></dxi-column>
-  <dxi-column dataField="HireDate" dataType="date"></dxi-column>
-  <dxi-column dataField="Position" alignment="right"></dxi-column>
-  <dxi-column dataField="Address"></dxi-column>
-  <dxi-column dataField="City"></dxi-column>
-  <dxi-column dataField="State"></dxi-column>
-  <dxi-column dataField="Zipcode" [visible]="false"></dxi-column>
-  <dxi-column dataField="HomePhone"></dxi-column>
-  <dxi-column dataField="MobilePhone"></dxi-column>
-  <dxi-column dataField="Skype"></dxi-column>
-  <dxi-column dataField="Email"></dxi-column>
-</dx-data-grid>
-
-<dx-data-grid
-  keyExpr="ID"
-  [dataSource]="customers"
-  [allowColumnReordering]="false">
-
-  <dxi-column dataField="CompanyName"></dxi-column>
-  <dxi-column dataField="Phone"></dxi-column>
-  <dxi-column dataField="Fax"></dxi-column>
-  <dxi-column dataField="City"></dxi-column>
-  <dxi-column dataField="State" [groupIndex]="0"></dxi-column>
-
-  <dxo-search-panel [visible]="true"></dxo-search-panel>
-  <dxo-paging [pageSize]="10"></dxo-paging>
-  <dxo-pager
-    [showPageSizeSelector]="true"
-    [allowedPageSizes]="[5, 10, 20]"
-    [showInfo]="true">
-  </dxo-pager>
-  <dxo-selection mode="multiple"></dxo-selection>
-  <dxo-editing
-    mode="row"
-    [allowUpdating]="true"
-    [allowDeleting]="true"
-    [allowAdding]="true">
-  </dxo-editing>
-
-  <dxo-group-panel [visible]="true"></dxo-group-panel>
-  <dxo-grouping [autoExpandAll]="true"></dxo-grouping>
-
-  <dxo-summary>
-    <dxi-total-item
-        column="CompanyName"
-        summaryType="count">
-    </dxi-total-item>
-  </dxo-summary>
-</dx-data-grid>
+<div class="navigation">
+  <h3>DevExtreme Angular Universal Demo</h3>
+  <dx-list
+    keyExpr="Path"
+    selectionMode="single"
+    [items]="navigation.pages"
+    [selectedItemKeys]="navigation.getPageName()"
+    (onItemClick)="navigation.navigate($event.itemData.Path)">
+    <div *dxTemplate="let item of 'item'">
+        <a [routerLink]="item.Path">{{item.Name}}</a>
+    </div>
+  </dx-list>
+</div>
+<div class="content dx-view-port">
+  <router-outlet></router-outlet>
+</div>
