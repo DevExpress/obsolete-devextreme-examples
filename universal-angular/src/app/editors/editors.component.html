@@ -1,0 +1,51 @@
+<h2>Editor Widgets</h2>
+
+<h3>Checkbox</h3>
+<dx-check-box text="Lonely checkbox" [(value)]="boolValue"></dx-check-box><br/>
+
+<h3>Swithch</h3>
+<dx-switch [(value)]="boolValue"></dx-switch><br/>
+
+<h3>Tex Box</h3>
+<dx-text-box placeholder="TextBox"></dx-text-box>
+<dx-text-box placeholder="TextBox" value="John Doe"></dx-text-box>
+
+<h3>Tex Area</h3>
+<dx-text-area placeholder="TextArea"></dx-text-area>
+<dx-text-area placeholder="TextArea" [(value)]="bigText" valueChangeEvent="keyup"></dx-text-area>
+
+<h3>Number Box</h3>
+<dx-number-box placeholder="NumberBox" [showSpinButtons]="true" [(value)]="numberValue" [min]="0" [max]="100" ></dx-number-box>
+
+<h3>Progress Bar</h3>
+<dx-progress-bar [(value)]="numberValue"></dx-progress-bar>
+
+<h3>Slider</h3>
+<dx-slider [(value)]="numberValue"></dx-slider>
+
+<h3>Range Slider</h3>
+<dx-range-slider [start]="15" [end]="75"></dx-range-slider>
+
+<h3>Load Indicator</h3>
+<dx-load-indicator [visible]="true"></dx-load-indicator>
+
+<h3>Autocomplete</h3>
+<dx-autocomplete placeholder="Autocomplete 'item'" [items]="demoItems"></dx-autocomplete>
+
+<h3>Select Box</h3>
+<dx-select-box placeholder="SelectBox" [items]="demoItems"></dx-select-box>
+
+<h3>Tag Box</h3>
+<dx-tag-box placeholder="TagBox" [items]="demoItems"></dx-tag-box>
+
+<h3>Radio Group</h3>
+<dx-radio-group [items]="demoItems"></dx-radio-group>
+
+<h3>Color Box</h3>
+<dx-color-box placeholder="ColorBox"></dx-color-box>
+
+<h3>Date Box</h3>
+<dx-date-box [(value)]="currentDate"></dx-date-box>
+
+<h3>Calendar</h3>
+<dx-calendar [(value)]="currentDate"></dx-calendar>

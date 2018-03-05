@@ -1,0 +1,29 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color:#f6f6f6;
+}
+
+.navigation a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation h3{
+  padding: 10px;
+}
+
+.content {
+  position: absolute;
+  left: 250px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+}

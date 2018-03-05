@@ -1,0 +1,127 @@
+<h2>Grids</h2>
+
+<h3>DataGrid with OData store</h3>
+
+<dx-data-grid id="gridContainer"
+        [dataSource]="devAVDataSource">
+    <dxi-column
+        dataField="Product_ID"
+    ></dxi-column>
+    <dxi-column
+        dataField="Product_Name"
+    ></dxi-column>
+    <dxi-column
+        dataField="Product_Cost"
+        caption="Cost"
+        dataType="number"
+        format="currency"
+    ></dxi-column>
+    <dxi-column
+        dataField="Product_Sale_Price"
+        caption="Sale Price"
+        dataType="number"
+        format="currency"
+    ></dxi-column>
+    <dxi-column
+        dataField="Product_Retail_Price"
+        caption="Retail Price"
+        dataType="number"
+        format="currency"
+    ></dxi-column>
+    <dxi-column
+        dataField="Product_Current_Inventory"
+        caption="Inventory"
+    ></dxi-column>
+</dx-data-grid>
+
+<h3>DataGrid with custom sizes and filters</h3>
+
+<dx-data-grid
+  [width]="1000"
+  [height]="300"
+  keyExpr="ID"
+  [dataSource]="employees"
+  [allowColumnReordering]="false"
+  [allowColumnResizing]="false"
+  [columnAutoWidth]="true">
+
+  <dxo-filter-row [visible]="true"></dxo-filter-row>
+  <dxo-header-filter [visible]="true"></dxo-header-filter>
+  <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
+  <dxo-column-fixing [enabled]="false"></dxo-column-fixing>
+  <dxo-master-detail [enabled]="true"></dxo-master-detail>
+  <dxo-scrolling mode="virtual"></dxo-scrolling>
+
+  <dxi-column
+      caption="Employee"
+      [fixed]="false"
+      [calculateCellValue]="calculateCellValue"
+  ></dxi-column>
+  <dxi-column dataField="BirthDate" dataType="date" sortOrder="asc"></dxi-column>
+  <dxi-column dataField="HireDate" dataType="date"></dxi-column>
+  <dxi-column dataField="Position" alignment="right"></dxi-column>
+  <dxi-column dataField="Address"></dxi-column>
+  <dxi-column dataField="City"></dxi-column>
+  <dxi-column dataField="State"></dxi-column>
+  <dxi-column dataField="Zipcode" [visible]="false"></dxi-column>
+  <dxi-column dataField="HomePhone"></dxi-column>
+  <dxi-column dataField="MobilePhone"></dxi-column>
+  <dxi-column dataField="Skype"></dxi-column>
+  <dxi-column dataField="Email"></dxi-column>
+</dx-data-grid>
+
+<h3>DataGrid with grouping and pager</h3>
+
+<dx-data-grid
+  keyExpr="ID"
+  [dataSource]="customers"
+  [allowColumnReordering]="false">
+
+  <dxi-column dataField="CompanyName"></dxi-column>
+  <dxi-column dataField="Phone"></dxi-column>
+  <dxi-column dataField="Fax"></dxi-column>
+  <dxi-column dataField="City"></dxi-column>
+  <dxi-column dataField="State" [groupIndex]="0"></dxi-column>
+
+  <dxo-search-panel [visible]="true"></dxo-search-panel>
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager
+    [showPageSizeSelector]="true"
+    [allowedPageSizes]="[5, 10, 20]"
+    [showInfo]="true">
+  </dxo-pager>
+  <dxo-selection mode="multiple"></dxo-selection>
+  <dxo-editing
+    mode="row"
+    [allowUpdating]="true"
+    [allowDeleting]="true"
+    [allowAdding]="true">
+  </dxo-editing>
+
+  <dxo-group-panel [visible]="true"></dxo-group-panel>
+  <dxo-grouping [autoExpandAll]="true"></dxo-grouping>
+
+  <dxo-summary>
+    <dxi-total-item
+        column="CompanyName"
+        summaryType="count">
+    </dxi-total-item>
+  </dxo-summary>
+</dx-data-grid>
+
+<h3>Tree List</h3>
+<dx-tree-list
+    id="employees"
+    [dataSource]="employees"
+    keyExpr="ID"
+    parentIdExpr="Head_ID"
+    [showRowLines]="true"
+    [columnAutoWidth]="true"
+    [expandedRowKeys]="[1]">
+    <dxi-column dataField="Title" caption="Position"></dxi-column>
+    <dxi-column dataField="Full_Name"></dxi-column>
+    <dxi-column dataField="City"></dxi-column>
+    <dxi-column dataField="State"></dxi-column>
+    <dxi-column dataField="Mobile_Phone"></dxi-column>
+    <dxi-column dataField="Hire_Date" dataType="date"></dxi-column>
+</dx-tree-list>

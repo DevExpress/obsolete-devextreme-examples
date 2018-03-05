@@ -1,0 +1,25 @@
+<h2>Actions and Lists</h2>
+
+<h3>Button</h3>
+<dx-button text="Simple button" icon="home"></dx-button><br/>
+
+<h3>Context Menu</h3>
+<dx-context-menu [visible]="true"></dx-context-menu>
+
+<h3>List</h3>
+<dx-list
+    [dataSource]="products"
+    [height]="400"
+    [grouped]="true"
+    [collapsibleGroups]="true"
+    [searchEnabled]="true"
+    searchExpr="Name"
+    searchMode="contains"
+    [showSelectionControls]="true"
+    selectionMode="multiple"
+    [selectedItemKeys]="[ 3, 4, 5 ]"
+    [allowItemDeleting]="true">
+        <div *dxTemplate="let data of 'item'">
+            <div>{{data.Name}}</div>
+        </div>
+</dx-list>

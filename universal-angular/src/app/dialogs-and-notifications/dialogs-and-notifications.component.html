@@ -1,0 +1,22 @@
+<h2>Dialogs and Notifications</h2>
+
+<h3>Load Indicator</h3>
+<dx-load-indicator></dx-load-indicator>
+
+<h3>Popup</h3>
+<div class="overlay-target">
+  {{ bigText }}
+  <dx-popup
+    [visible]="true"
+    target=".content"
+    [shading]="true"
+    [width]="300"
+    [height]="300">
+    <dxo-position
+      my="center"
+      at="center"
+      of=".overlay-target">
+    </dxo-position>
+    Some content
+  </dx-popup>
+</div>
