@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "DevExtreme with RequireJS and AngularJS example",
   "dependencies": {
-    "devextreme": "~17.2.3",
+    "devextreme": "18.1-unstable",
     "jquery": "^3.1.1",
     "requirejs": "^2.2.0",
     "r.js": "^1.0.3",

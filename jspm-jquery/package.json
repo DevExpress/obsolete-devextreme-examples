@@ -16,7 +16,7 @@
   "jspm": {
     "dependencies": {
       "css": "github:systemjs/plugin-css@^0.1.22",
-      "devextreme": "npm:devextreme@~17.2.3",
+      "devextreme": "npm:devextreme@18.1-unstable",
       "jquery": "npm:jquery@^3.1.1"
     },
     "devDependencies": {
