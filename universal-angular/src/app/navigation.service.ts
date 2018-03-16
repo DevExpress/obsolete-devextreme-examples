@@ -32,6 +32,10 @@ export class NavigationService {
     {
       Path: "viz",
       Name: "Charts and Gauges"
+    },
+    {
+      Path: "navigation",
+      Name: "Navigation"
     }
   ];
 

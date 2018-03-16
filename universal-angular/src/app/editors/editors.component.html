@@ -17,6 +17,27 @@
 <h3>Number Box</h3>
 <dx-number-box placeholder="NumberBox" [showSpinButtons]="true" [(value)]="numberValue" [min]="0" [max]="100" ></dx-number-box>
 
+<h3>Drop Down Box</h3>
+<dx-drop-down-box
+    [value]="demoItems[0]"
+    [opened]="true"
+    [dataSource]="demoItems">
+    <div *dxTemplate="let contentData of 'content'">
+        <dx-list
+            [dataSource]="demoItems"
+            selectionMode="single">
+        </dx-list>
+    </div>
+</dx-drop-down-box>
+
+<h3>File Uploader</h3>
+<dx-file-uploader
+  selectButtonText="Select photo"
+  labelText=""
+  accept="image/*"
+  uploadMode="useForm">
+</dx-file-uploader>
+
 <h3>Progress Bar</h3>
 <dx-progress-bar [(value)]="numberValue"></dx-progress-bar>
 
