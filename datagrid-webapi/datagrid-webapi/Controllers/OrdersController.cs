@@ -18,6 +18,14 @@ namespace datagrid_webapi.Controllers
         [HttpGet]
         public HttpResponseMessage Get(DataSourceLoadOptions loadOptions)
         {
+            //  used for create case for show error in DataSourceLoader.Load which leads to break work of DxGrid
+            if (_db.Orders.All(q => q.EmployeeID != null))
+            {
+                var someOrders = _db.Orders.Take(10).ToList();
+                someOrders.ForEach(q => q.EmployeeID = null);
+                _db.SaveChanges();
+            }
+
             loadOptions.PrimaryKey = new[] { "OrderID" };
 
             var orders = from o in _db.Orders
@@ -27,7 +35,8 @@ namespace datagrid_webapi.Controllers
                              o.CustomerID,
                              CustomerName = o.Customer.ContactName,
                              o.EmployeeID,
-                             EmployeeName = o.Employee.FirstName + " " + o.Employee.LastName,
+                             // need for reproduce case when group item key is null
+                             EmployeeName = o.Employee != null ? o.Employee.FirstName + " " + o.Employee.LastName : null,
                              o.OrderDate,
                              o.RequiredDate,
                              o.ShippedDate,
@@ -63,7 +72,7 @@ namespace datagrid_webapi.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK);
         }
-        
+
         [HttpPost]
         public HttpResponseMessage Post(FormDataCollection form)
         {
@@ -81,7 +90,7 @@ namespace datagrid_webapi.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK);
         }
-        
+
         [HttpDelete]
         public HttpResponseMessage Delete(FormDataCollection form)
         {
