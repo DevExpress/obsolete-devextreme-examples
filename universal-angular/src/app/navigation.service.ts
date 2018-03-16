@@ -36,6 +36,10 @@ export class NavigationService {
     {
       Path: "navigation",
       Name: "Navigation"
+    },
+    {
+      Path: "forms-and-multi-purpose",
+      Name: "Forms and Multi-Purpose"
     }
   ];
 

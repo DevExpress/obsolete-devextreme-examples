@@ -13,6 +13,7 @@ import { EditorsComponent } from './editors/editors.component';
 import { ActionsAndListsComponent } from './actions-and-lists/actions-and-lists.component';
 import { DialogsAndNotificationsComponent } from './dialogs-and-notifications/dialogs-and-notifications.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { FormsAndMultiPurposeComponent } from './forms-and-multi-purpose/forms-and-multi-purpose.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     EditorsComponent,
     ActionsAndListsComponent,
     DialogsAndNotificationsComponent,
-    NavigationComponent
+    NavigationComponent,
+    FormsAndMultiPurposeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
