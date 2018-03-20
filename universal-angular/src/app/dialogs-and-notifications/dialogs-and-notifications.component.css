@@ -6,6 +6,6 @@
 }
 
 .resizable {
-  display: block;
   background-color: #ccc;
+  font-weight: bold;
 }
