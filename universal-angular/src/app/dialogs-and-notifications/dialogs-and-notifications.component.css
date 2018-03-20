@@ -4,3 +4,8 @@
   height: 400px;
   overflow: hidden;
 }
+
+.resizable {
+  display: block;
+  background-color: #ccc;
+}
