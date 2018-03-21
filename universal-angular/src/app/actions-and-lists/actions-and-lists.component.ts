@@ -10,9 +10,11 @@ import { Product, Service } from './products.service';
 export class ActionsAndListsComponent {
 
   products;
+  plainProducts;
 
   constructor(service: Service) {
-      this.products = service.getProducts();
+    this.products = service.getProducts();
+    this.plainProducts = service.getPlainProducts();
   }
 
 }

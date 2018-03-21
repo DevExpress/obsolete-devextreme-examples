@@ -29,3 +29,24 @@
             <div>{{data.Name}}</div>
         </div>
 </dx-list>
+
+<h3>Accordion</h3>
+<dx-accordion
+  #accordion
+  [dataSource]="plainProducts"
+  [collapsible]="false"
+  [multiple]="false"
+  [selectedItems]="[plainProducts[0]]">
+  <div *dxTemplate="let data of 'title'">
+    <h4>{{data.Name}}</h4>
+  </div>
+  <div *dxTemplate="let data of 'item'">
+    <div>
+      <p><b>Name:</b> {{data.Name}}</p>
+      <p><b>Category:</b> {{data.Category}}</p>
+      <p><b>Price:</b> {{data.Price}}</p>
+      <p><b>Current_Inventory:</b> {{data.Current_Inventory}}</p>
+      <p><b>ImageSrc:</b> {{data.ImageSrc}}</p>
+    </div>
+  </div>
+</dx-accordion>
