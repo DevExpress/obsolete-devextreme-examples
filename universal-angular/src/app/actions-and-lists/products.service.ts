@@ -167,4 +167,10 @@ export class Service {
           group: "Category"
       });
     }
+
+  getPlainProducts() {
+    return new DataSource({
+      store: products,
+    });
+  }
 }
