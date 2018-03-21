@@ -13,7 +13,7 @@ export class ActionsAndListsComponent {
   plainProducts;
 
   constructor(service: Service) {
-      this.products = service.getProducts();
+    this.products = service.getProducts();
     this.plainProducts = service.getPlainProducts();
   }
 
