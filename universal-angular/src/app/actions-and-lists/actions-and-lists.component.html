@@ -6,6 +6,12 @@
 <h3>Context Menu</h3>
 <dx-context-menu [visible]="true"></dx-context-menu>
 
+<h3>Lookup</h3>
+<dx-lookup
+  [items]="products"
+  [value]="products[0]">
+</dx-lookup>
+
 <h3>List</h3>
 <dx-list
     [dataSource]="products"

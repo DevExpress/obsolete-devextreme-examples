@@ -21,6 +21,24 @@
   </dx-popup>
 </div>
 
+<h3>Defer Rendering</h3>
+
+<h4>Not resolved</h4>
+<dx-defer-rendering>
+  <div *dxTemplate="let data of 'content'">
+    <p>Some content</p>
+  </div>
+</dx-defer-rendering>
+
+<h4>Resolved</h4>
+<dx-defer-rendering
+  [renderWhen]="modelIsReady">
+  <div *dxTemplate="let data of 'content'">
+    <p>Some content</p>
+  </div>
+</dx-defer-rendering>
+
+<h3>Resizable</h3>
 <dx-resizable
     class="resizable"
     handles="right bottom"
