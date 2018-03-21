@@ -1,0 +1,16 @@
+<div class="navigation">
+  <h3>DevExtreme Angular Universal Demo</h3>
+  <dx-list
+    keyExpr="Path"
+    selectionMode="single"
+    [items]="navigation.pages"
+    [selectedItemKeys]="navigation.getPageName()"
+    (onItemClick)="navigation.navigate($event.itemData.Path)">
+    <div *dxTemplate="let item of 'item'">
+        <a [routerLink]="item.Path">{{item.Name}}</a>
+    </div>
+  </dx-list>
+</div>
+<div class="content dx-view-port">
+  <router-outlet></router-outlet>
+</div>

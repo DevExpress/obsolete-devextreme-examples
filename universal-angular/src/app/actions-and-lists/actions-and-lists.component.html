@@ -1,0 +1,52 @@
+<h2>Actions and Lists</h2>
+
+<h3>Button</h3>
+<dx-button text="Simple button" icon="home"></dx-button><br/>
+
+<h3>Context Menu</h3>
+<dx-context-menu [visible]="true"></dx-context-menu>
+
+<h3>Lookup</h3>
+<dx-lookup
+  [items]="products"
+  [value]="products[0]">
+</dx-lookup>
+
+<h3>List</h3>
+<dx-list
+    [dataSource]="products"
+    [height]="400"
+    [grouped]="true"
+    [collapsibleGroups]="true"
+    [searchEnabled]="true"
+    searchExpr="Name"
+    searchMode="contains"
+    [showSelectionControls]="true"
+    selectionMode="multiple"
+    [selectedItemKeys]="[ 3, 4, 5 ]"
+    [allowItemDeleting]="true">
+        <div *dxTemplate="let data of 'item'">
+            <div>{{data.Name}}</div>
+        </div>
+</dx-list>
+
+<h3>Accordion</h3>
+<dx-accordion
+  #accordion
+  [dataSource]="plainProducts"
+  [collapsible]="false"
+  [multiple]="false"
+  [selectedItems]="[plainProducts[0]]">
+  <div *dxTemplate="let data of 'title'">
+    <h4>{{data.Name}}</h4>
+  </div>
+  <div *dxTemplate="let data of 'item'">
+    <div>
+      <p><b>Name:</b> {{data.Name}}</p>
+      <p><b>Category:</b> {{data.Category}}</p>
+      <p><b>Price:</b> {{data.Price}}</p>
+      <p><b>Current_Inventory:</b> {{data.Current_Inventory}}</p>
+      <p><b>ImageSrc:</b> {{data.ImageSrc}}</p>
+    </div>
+  </div>
+</dx-accordion>

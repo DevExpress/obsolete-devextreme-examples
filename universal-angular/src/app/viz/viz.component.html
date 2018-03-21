@@ -1,0 +1,34 @@
+<h2>Charts and Gauges</h2>
+
+<h2>Chart</h2>
+<dx-chart
+    id="chart"
+    title="World Population by Decade"
+    [dataSource]="populationData"
+>
+    <dxo-legend [visible]="false"></dxo-legend>
+    <dxi-series type="bar"></dxi-series>
+    <dxo-argument-axis [tickInterval]="10">
+        <dxo-label>
+            <dxo-format type="decimal"></dxo-format>
+        </dxo-label>
+    </dxo-argument-axis>
+</dx-chart>
+
+<h2>Gauge</h2>
+<dx-bar-gauge id="gauge"
+    [startValue]="0"
+    [endValue]="100"
+    [values]="[47.27, 65.32, 84.59, 71.86]">
+    <dxo-label
+        [indent]="30"
+    ><dxo-format
+        type="fixedPoint"
+        [precision]="1"
+    ></dxo-format>
+    </dxo-label>
+    <dxo-export [enabled]="true"></dxo-export>
+    <dxo-title text="Series' Ratings">
+        <dxo-font [size]="28"></dxo-font>
+    </dxo-title>
+</dx-bar-gauge>

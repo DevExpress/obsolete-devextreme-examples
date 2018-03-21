@@ -1,0 +1,18 @@
+<h2>Navigation</h2>
+
+<h3>Menu</h3>
+<dx-menu
+  [dataSource]="products"
+  displayExpr="name"
+  orientation="horizontal"
+  submenuDirection="auto"
+>
+</dx-menu>
+
+<h3>Tabs</h3>
+<dx-tabs
+  [dataSource]="tabs"
+  [width]="300"
+  [scrollByContent]="true"
+  [showNavButtons]="true"
+></dx-tabs>
