@@ -30,6 +30,10 @@ export class NavigationService {
       Name: "Grids"
     },
     {
+      Path: "schedulers",
+      Name: "Schedulers"
+    },
+    {
       Path: "viz",
       Name: "Charts and Gauges"
     },

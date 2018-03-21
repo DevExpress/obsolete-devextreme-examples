@@ -10,6 +10,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { GridsComponent } from './grids/grids.component';
 import { VizComponent } from './viz/viz.component';
 import { EditorsComponent } from './editors/editors.component';
+import { SchedulersComponent } from './schedulers/schedulers.component';
 import { ActionsAndListsComponent } from './actions-and-lists/actions-and-lists.component';
 import { DialogsAndNotificationsComponent } from './dialogs-and-notifications/dialogs-and-notifications.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -22,6 +23,7 @@ import { FormsAndMultiPurposeComponent } from './forms-and-multi-purpose/forms-a
     GridsComponent,
     VizComponent,
     EditorsComponent,
+    SchedulersComponent,
     ActionsAndListsComponent,
     DialogsAndNotificationsComponent,
     NavigationComponent,
