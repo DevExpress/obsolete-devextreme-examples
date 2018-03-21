@@ -16,3 +16,19 @@
   [scrollByContent]="true"
   [showNavButtons]="true"
 ></dx-tabs>
+
+<h3>SlideOut</h3>
+<dx-slide-out [dataSource]="tabs" [height]="150">
+  <div *dxTemplate="let product of 'item'">
+    <div id="info">
+        <h3>SlideOut Item</h3>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">E-mail</div>
+            <dx-text-box class="dx-field-value">
+            </dx-text-box>
+        </div>
+    </div>
+  </div>
+</dx-slide-out>
