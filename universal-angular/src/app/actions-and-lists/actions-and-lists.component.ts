@@ -11,10 +11,12 @@ export class ActionsAndListsComponent {
 
   products;
   plainProducts;
+  images;
 
   constructor(service: Service) {
     this.products = service.getProducts();
     this.plainProducts = service.getPlainProducts();
+    this.images = service.getImages();
   }
 
 }
