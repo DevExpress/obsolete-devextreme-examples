@@ -125,3 +125,15 @@
     <dxi-column dataField="Mobile_Phone"></dxi-column>
     <dxi-column dataField="Hire_Date" dataType="date"></dxi-column>
 </dx-tree-list>
+
+<h3>Filter Builder</h3>
+<dx-filter-builder
+    [fields]="fields"
+    [(value)]="filter">
+</dx-filter-builder>
+
+<h3>Pivot Grid</h3>
+<dx-pivot-grid id="pivotGrid"
+  [width]="440"
+  [height]="600">
+</dx-pivot-grid>
