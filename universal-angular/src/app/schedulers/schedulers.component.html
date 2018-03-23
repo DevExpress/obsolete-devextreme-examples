@@ -1,9 +1,35 @@
-<h3>Scheduler</h3>
+<h3>Scheduler, Day view</h3>
 <dx-scheduler
     [dataSource]="appointmentsData"
-    [views]='["day", "week", "workWeek", "month"]'
     currentView="day"
     [currentDate]="currentDate"
     [startDayHour]="9"
+    [height]="600">
+    <dxi-view
+        name="3 Days"
+        type="day"
+        [intervalCount]="3"
+        [startDate]="currentDate">
+    </dxi-view>
+</dx-scheduler>
+
+<h3>Scheduler, Month view</h3>
+<dx-scheduler
+    [dataSource]="appointmentsData"
+    [views]='["day", "week", "workWeek", "month"]'
+    currentView="month"
+    [currentDate]="currentDate"
+    [startDayHour]="9"
+    [height]="600">
+</dx-scheduler>
+
+<h3>Scheduler, TimelineWeek View</h3>
+<dx-scheduler
+    [dataSource]="appointmentsData"
+    [views]='["timelineDay", "timelineWeek"]'
+    currentView="timelineWeek"
+    [currentDate]="currentDate"
+    [startDayHour]="9"
+    [endDayHour]="12"
     [height]="600">
 </dx-scheduler>
