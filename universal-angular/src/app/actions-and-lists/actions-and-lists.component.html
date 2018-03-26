@@ -30,6 +30,15 @@
         </div>
 </dx-list>
 
+<h3>List with OData store</h3>
+<dx-list
+    [dataSource]="devAVDataSource"
+    [height]="400">
+        <div *dxTemplate="let data of 'item'">
+            <div>{{data.Product_Name}}</div>
+        </div>
+</dx-list>
+
 <h3>Accordion</h3>
 <dx-accordion
   #accordion

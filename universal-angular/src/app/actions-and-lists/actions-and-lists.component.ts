@@ -12,11 +12,20 @@ export class ActionsAndListsComponent {
   products;
   plainProducts;
   images;
+  devAVDataSource;
 
   constructor(service: Service) {
     this.products = service.getProducts();
     this.plainProducts = service.getPlainProducts();
     this.images = service.getImages();
+    this.devAVDataSource = {
+      store: {
+        type: 'odata',
+        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products'
+      },
+      select: [
+        'Product_Name'
+      ]
+    };
   }
-
 }
