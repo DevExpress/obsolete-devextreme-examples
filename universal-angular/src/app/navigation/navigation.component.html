@@ -32,3 +32,13 @@
     </div>
   </div>
 </dx-slide-out>
+
+<h3>TreeView</h3>
+<dx-tree-view
+  [dataSource]="products"
+  [height]="500"
+  showCheckBoxesMode="selectAll"
+  [expandNodesRecursive]="true"
+  keyExpr="id"
+  displayExpr="name"
+></dx-tree-view>
