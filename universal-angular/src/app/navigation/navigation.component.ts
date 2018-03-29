@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Product, Service } from './products.service';
-import notify from 'devextreme/ui/notify';
 
 @Component({
   selector: 'navigation',
@@ -30,20 +29,14 @@ export class NavigationComponent {
         widget: 'dxButton',
         options: {
             type: 'back',
-            text: 'Back',
-            onClick: () => {
-                notify('Back button has been clicked!');
-            }
+            text: 'Back'
         }
     }, {
         location: 'before',
         widget: 'dxButton',
         locateInMenu: 'auto',
         options: {
-            icon: 'refresh',
-            onClick: () => {
-                notify('Refresh button has been clicked!');
-            }
+            icon: 'refresh'
         }
     }, {
         location: 'center',
@@ -60,29 +53,17 @@ export class NavigationComponent {
         widget: 'dxButton',
         locateInMenu: 'auto',
         options: {
-            icon: 'plus',
-            onClick: () => {
-                notify('Add button has been clicked!');
-            }
+            icon: 'plus'
         }
     }, {
         locateInMenu: 'always',
-        text: 'Save',
-        onClick: () => {
-            notify('Save option has been clicked!');
-        }
+        text: 'Save'
     }, {
         locateInMenu: 'always',
-        text: 'Print',
-        onClick: () => {
-            notify('Print option has been clicked!');
-        }
+        text: 'Print'
     }, {
         locateInMenu: 'always',
-        text: 'Settings',
-        onClick: () => {
-            notify('Settings option has been clicked!');
-        }
+        text: 'Settings'
     }
   ];
 
