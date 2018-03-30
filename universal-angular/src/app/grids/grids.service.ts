@@ -14,6 +14,7 @@ export class Customer {
 
 export class Employee {
   ID: number;
+  Head_ID: number;
   FirstName: string;
   LastName: string;
   Position: string;
@@ -235,6 +236,7 @@ let сustomers: Customer[] = [{
 
 let employees: Employee[] = [{
   "ID": 1,
+  "Head_ID": 0,
   "FirstName": "John",
   "LastName": "Heart",
   "Position": "CEO",
@@ -252,6 +254,7 @@ let employees: Employee[] = [{
   "MobilePhone": "(213) 555-9392"
 },{
   "ID": 2,
+  "Head_ID": 1,
   "FirstName": "Olivia",
   "LastName": "Peyton",
   "Position": "Sales Assistant",
@@ -269,6 +272,7 @@ let employees: Employee[] = [{
   "MobilePhone": "(818) 555-2387"
 }, {
   "ID": 3,
+  "Head_ID": 1,
   "FirstName": "Robert",
   "LastName": "Reagan",
   "Position": "CMO",
@@ -286,6 +290,7 @@ let employees: Employee[] = [{
   "MobilePhone": "(818) 555-2387"
 }, {
   "ID": 4,
+  "Head_ID": 1,
   "FirstName": "Greta",
   "LastName": "Sims",
   "Position": "HR Manager",
@@ -303,6 +308,7 @@ let employees: Employee[] = [{
   "MobilePhone": "(818) 555-6546"
 }, {
   "ID": 5,
+  "Head_ID": 2,
   "FirstName": "Brett",
   "LastName": "Wade",
   "Position": "IT Manager",
@@ -320,6 +326,7 @@ let employees: Employee[] = [{
   "MobilePhone": "(626) 555-0358"
 }, {
   "ID": 6,
+  "Head_ID": 2,
   "FirstName": "Sandra",
   "LastName": "Johnson",
   "Position": "Controller",
@@ -337,6 +344,7 @@ let employees: Employee[] = [{
   "MobilePhone": "(562) 555-2082"
 }, {
   "ID": 7,
+  "Head_ID": 3,
   "FirstName": "Kevin",
   "LastName": "Carter",
   "Position": "Shipping Manager",
@@ -354,6 +362,7 @@ let employees: Employee[] = [{
   "MobilePhone": "(213) 555-2840"
 }, {
   "ID": 8,
+  "Head_ID": 3,
   "FirstName": "Cynthia",
   "LastName": "Stanwick",
   "Position": "HR Assistant",
@@ -371,6 +380,7 @@ let employees: Employee[] = [{
   "MobilePhone": "(818) 555-6655"
 }, {
   "ID": 9,
+  "Head_ID": 3,
   "FirstName": "Kent",
   "LastName": "Samuelson",
   "Position": "Ombudsman",
@@ -388,8 +398,27 @@ let employees: Employee[] = [{
   "MobilePhone": "(562) 555-9282"
 }, {
   "ID": 10,
+  "Head_ID": 4,
   "FirstName": "Taylor",
   "LastName": "Riley",
+  "Position": "Network Admin",
+  "BirthDate": "1982/08/14",
+  "HireDate": "2012/04/14",
+  "Title": "Mr.",
+  "Address": "7776 Torreyson Dr",
+  "City": "San Jose",
+  "State": "California",
+  "Zipcode": 90012,
+  "Email": "taylorr@dx-email.com",
+  "Skype": "taylorrDXskype",
+  "HomePhone": "(310) 555-9712",
+  "DepartmentID": 5,
+  "MobilePhone": "(310) 555-7276"
+}, {
+  "ID": 11,
+  "Head_ID": 4,
+  "FirstName": "Davey",
+  "LastName": "Jones",
   "Position": "Network Admin",
   "BirthDate": "1982/08/14",
   "HireDate": "2012/04/14",
