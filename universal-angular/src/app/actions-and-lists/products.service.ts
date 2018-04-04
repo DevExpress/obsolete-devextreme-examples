@@ -181,7 +181,7 @@ export class Service {
 
   getPlainProducts() {
     return new DataSource({
-      store: products
+      store: products.slice(0, 4)
     });
   }
 

@@ -22,10 +22,6 @@ export class NavigationService {
       Name: 'Actions and Lists'
     },
     {
-      Path: 'dialogs-and-notifications',
-      Name: 'Dialogs and Notifications'
-    },
-    {
       Path: 'grids',
       Name: 'Grids'
     },

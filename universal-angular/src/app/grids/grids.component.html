@@ -134,7 +134,14 @@
 </dx-filter-builder>
 
 <h3>Pivot Grid</h3>
-<dx-pivot-grid id="pivotGrid"
-  [width]="440"
-  [height]="600">
+<dx-pivot-grid
+  [allowSortingBySummary]="true"
+  [allowSorting]="true"
+  [allowFiltering]="true"
+  [allowExpandAll]="true"
+  [height]="440"
+  [showBorders]="true"
+  [dataSource]="salseDataSource">
+  <dxo-export [enabled]="true" fileName="Sales"></dxo-export>
+  <dxo-field-chooser [enabled]="false"></dxo-field-chooser>
 </dx-pivot-grid>

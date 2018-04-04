@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Service, Customer, Employee } from './grids.service';
+import { CustomersService, Customer } from './customers.service';
+import { EmployeesService, Employee } from './employees.service';
+import { SalesService, Sale } from './sales.service';
 import 'devextreme/data/odata/store';
 
 @Component({
   selector: 'app-grids',
   templateUrl: './grids.component.html',
   styleUrls: ['./grids.component.css'],
-  providers: [Service]
+  providers: [CustomersService, EmployeesService, SalesService]
 })
 export class GridsComponent implements OnInit {
 
@@ -17,10 +19,11 @@ export class GridsComponent implements OnInit {
   sales: Array<any>;
 
   devAVDataSource: any;
+  salseDataSource: any;
 
-  constructor(service: Service) {
-    this.customers = service.getCustomers();
-    this.employees = service.getEmployees();
+  constructor(customersService: CustomersService, employeesService: EmployeesService, salesService: SalesService) {
+    this.customers = customersService.getCustomers();
+    this.employees = employeesService.getEmployees();
     this.filter = [
       ['Product_Current_Inventory', '<>', 0],
       'or',
@@ -60,6 +63,37 @@ export class GridsComponent implements OnInit {
       ],
       filter: ['Product_Current_Inventory', '>', 0]
     };
+
+    this.salseDataSource = {
+      fields: [{
+          caption: 'Region',
+          width: 120,
+          dataField: 'region',
+          area: 'row'
+      }, {
+          caption: 'City',
+          dataField: 'city',
+          width: 150,
+          area: 'row',
+          selector: this.citySelector
+      }, {
+          dataField: 'date',
+          dataType: 'date',
+          area: 'column'
+      }, {
+          caption: 'Sales',
+          dataField: 'amount',
+          dataType: 'number',
+          summaryType: 'sum',
+          format: 'currency',
+          area: 'data'
+      }],
+      store: salesService.getSales()
+    };
+  }
+
+  citySelector(data) {
+    return data.city + ' (' + data.country + ')';
   }
   calculateCellValue(data) {
     return [data.Title, data.FirstName, data.LastName].join(' ');

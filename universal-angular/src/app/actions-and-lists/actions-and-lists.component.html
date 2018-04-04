@@ -3,9 +3,6 @@
 <h3>Button</h3>
 <dx-button text="Simple button" icon="home"></dx-button><br/>
 
-<h3>Context Menu</h3>
-<dx-context-menu [visible]="true"></dx-context-menu>
-
 <h3>Lookup</h3>
 <dx-lookup
   [items]="products"
@@ -47,7 +44,7 @@
   [multiple]="false"
   [selectedItems]="[plainProducts[0]]">
   <div *dxTemplate="let data of 'title'">
-    <h4>{{data.Name}}</h4>
+    {{data.Name}}
   </div>
   <div *dxTemplate="let data of 'item'">
     <div>

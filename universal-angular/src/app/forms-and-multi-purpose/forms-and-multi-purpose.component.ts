@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Service, Employee } from './forms-and-multi-purpose.service';
+import { Service, Employee } from './employee.service';
 
 @Component({
   selector: 'app-forms-and-multi-purpose.component',
