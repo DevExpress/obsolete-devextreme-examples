@@ -12,15 +12,15 @@ export class NavigationComponent {
   products;
 
   tabs = [
-    { text: "user" },
-    { text: "analytics" },
-    { text: "customers" },
-    { text: "search" },
-    { text: "favorites" },
-    { text: "additional" },
-    { text: "clients" },
-    { text: "orders" },
-    { text: "shipment" }
+    { text: 'user' },
+    { text: 'analytics' },
+    { text: 'customers' },
+    { text: 'search' },
+    { text: 'favorites' },
+    { text: 'additional' },
+    { text: 'clients' },
+    { text: 'orders' },
+    { text: 'shipment' }
   ];
 
   toolbarItems = [

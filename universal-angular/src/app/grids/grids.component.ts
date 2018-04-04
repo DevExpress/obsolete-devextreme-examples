@@ -16,32 +16,32 @@ export class GridsComponent implements OnInit {
   fields: Array<any>;
   sales: Array<any>;
 
-  devAVDataSource:any;
+  devAVDataSource: any;
 
   constructor(service: Service) {
     this.customers = service.getCustomers();
     this.employees = service.getEmployees();
     this.filter = [
-      ["Product_Current_Inventory", "<>", 0],
-      "or",
+      ['Product_Current_Inventory', '<>', 0],
+      'or',
       [
-          ["Product_Name", "contains", "HD"],
-          "and",
-          ["Product_Cost", "<", 200]
+          ['Product_Name', 'contains', 'HD'],
+          'and',
+          ['Product_Cost', '<', 200]
       ]
     ];
     this.fields = [
       {
-          dataField: "Product_Name"
+          dataField: 'Product_Name'
       }, {
-          caption: "Cost",
-          dataField: "Product_Cost",
-          dataType: "number",
-          format: "currency"
+          caption: 'Cost',
+          dataField: 'Product_Cost',
+          dataType: 'number',
+          format: 'currency'
       }, {
-          dataField: "Product_Current_Inventory",
-          dataType: "number",
-          caption: "Inventory"
+          dataField: 'Product_Current_Inventory',
+          dataType: 'number',
+          caption: 'Inventory'
       }
   ];
 
@@ -62,7 +62,7 @@ export class GridsComponent implements OnInit {
     };
   }
   calculateCellValue(data) {
-    return [data.Title, data.FirstName, data.LastName].join(" ");
+    return [data.Title, data.FirstName, data.LastName].join(' ');
   }
 
   ngOnInit() {

@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
 export class Appointment {
     text: string;
@@ -7,13 +7,13 @@ export class Appointment {
     allDay?: boolean;
 }
 
-let appointments: Appointment[] = [
+const appointments: Appointment[] = [
     {
-        text: "Website Re-Design Plan",
+        text: 'Website Re-Design Plan',
         startDate: new Date(2017, 4, 22, 9, 30),
         endDate: new Date(2017, 4, 22, 11, 30)
     }, {
-        text: "Install New Router in Dev Room",
+        text: 'Install New Router in Dev Room',
         startDate: new Date(2017, 4, 22, 14, 30),
         endDate: new Date(2017, 4, 22, 15, 30)
     }

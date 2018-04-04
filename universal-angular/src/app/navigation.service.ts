@@ -14,36 +14,36 @@ export class NavigationService {
 
   pages: Page[] = [
     {
-      Path: "editors",
-      Name: "Editors"
+      Path: 'editors',
+      Name: 'Editors'
     },
     {
-      Path: "actions-and-lists",
-      Name: "Actions and Lists"
+      Path: 'actions-and-lists',
+      Name: 'Actions and Lists'
     },
     {
-      Path: "dialogs-and-notifications",
-      Name: "Dialogs and Notifications"
+      Path: 'dialogs-and-notifications',
+      Name: 'Dialogs and Notifications'
     },
     {
-      Path: "grids",
-      Name: "Grids"
+      Path: 'grids',
+      Name: 'Grids'
     },
     {
-      Path: "schedulers",
-      Name: "Schedulers"
+      Path: 'schedulers',
+      Name: 'Schedulers'
     },
     {
-      Path: "viz",
-      Name: "Charts and Gauges"
+      Path: 'viz',
+      Name: 'Charts and Gauges'
     },
     {
-      Path: "navigation",
-      Name: "Navigation"
+      Path: 'navigation',
+      Name: 'Navigation'
     },
     {
-      Path: "forms-and-multi-purpose",
-      Name: "Forms and Multi-Purpose"
+      Path: 'forms-and-multi-purpose',
+      Name: 'Forms and Multi-Purpose'
     }
   ];
 
@@ -57,7 +57,7 @@ export class NavigationService {
   }
 
   getPageName() {
-    var path = this.location.path();
+    const path = this.location.path();
     return path && path.match(/[^/]+$/)[0].toLowerCase() || this.pages[0].Path;
   }
 }

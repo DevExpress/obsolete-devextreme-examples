@@ -5,7 +5,7 @@ export class Population {
     val: number;
 }
 
-let populationData: Population[] = [{
+const populationData: Population[] = [{
     arg: 1950,
     val: 2525778669
 }, {

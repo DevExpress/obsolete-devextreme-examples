@@ -18,7 +18,7 @@ export class Employee {
     Skype: string;
 }
 
-let employee : Employee = {
+const employee: Employee = {
     ID: 1,
     FirstName: 'John',
     LastName: 'Heart',

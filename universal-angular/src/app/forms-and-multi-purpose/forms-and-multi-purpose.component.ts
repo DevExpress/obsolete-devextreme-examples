@@ -8,7 +8,7 @@ import { Service, Employee } from './forms-and-multi-purpose.service';
   providers: [Service]
 })
 export class FormsAndMultiPurposeComponent implements OnInit {
-  employee : Employee;
+  employee: Employee;
 
   constructor(service: Service) {
     this.employee = service.getEmployee();
