@@ -22,10 +22,10 @@ How to create an universal application you can see in this [article](https://ang
  
 4. Build example
  ``` text
-npm run build:universal
+npm run build:ssr
  ```
 
 5. Run example
  ``` text
-npm run serve:universal
+npm run serve:ssr
  ```
