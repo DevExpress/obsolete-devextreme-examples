@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Service, Customer, Employee } from './grids.service';
 import 'devextreme/data/odata/store';
+import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
 
 @Component({
   selector: 'app-grids',
@@ -15,6 +16,7 @@ export class GridsComponent implements OnInit {
   filter: Array<any>;
   fields: Array<any>;
   sales: Array<any>;
+  pivotGridDataSource: PivotGridDataSource;
 
   devAVDataSource:any;
 
@@ -44,6 +46,26 @@ export class GridsComponent implements OnInit {
           caption: "Inventory"
       }
   ];
+
+  this.pivotGridDataSource = new PivotGridDataSource({
+      fields: [{
+          dataField: "region",
+          area: "row",
+      }, {
+          dataField: "city",
+          area: "row",
+      }, {
+          dataField: "date",
+          dataType: "date",
+          area: "column"
+      }, {
+          dataField: "amount",
+          dataType: "number",
+          summaryType: "sum",
+          format: "currency",
+          area: "data"
+      }]
+  });
 
     this.devAVDataSource = {
       store: {

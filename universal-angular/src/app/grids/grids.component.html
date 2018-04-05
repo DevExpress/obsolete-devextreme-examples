@@ -127,13 +127,35 @@
 </dx-tree-list>
 
 <h3>Filter Builder</h3>
-<dx-filter-builder
-    [fields]="fields"
-    [(value)]="filter">
+<dx-filter-builder [fields]="fields" [(value)]="filter">
 </dx-filter-builder>
 
 <h3>Pivot Grid</h3>
 <dx-pivot-grid id="pivotGrid"
-  [width]="440"
-  [height]="600">
+    [width]="440"
+    [height]="600">
 </dx-pivot-grid>
+
+<h3>PivotGridFieldChooser Layout 0</h3>
+<dx-pivot-grid-field-chooser
+    [dataSource]="pivotGridDataSource"
+    [width]="500"
+    [height]="400"
+    [layout]=0>
+</dx-pivot-grid-field-chooser>
+
+<h3>PivotGridFieldChooser Layout 1</h3>
+<dx-pivot-grid-field-chooser
+    [dataSource]="pivotGridDataSource"
+    [width]="500"
+    [height]="400"
+    [layout]=1>
+</dx-pivot-grid-field-chooser>
+
+<h3>PivotGridFieldChooser Layout 2</h3>
+<dx-pivot-grid-field-chooser
+    [dataSource]="pivotGridDataSource"
+    [width]="500"
+    [height]="400"
+    [layout]=2>
+</dx-pivot-grid-field-chooser>
