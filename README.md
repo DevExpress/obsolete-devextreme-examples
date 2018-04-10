@@ -17,6 +17,7 @@ jspm with AngularJS | [jspm-angularjs](jspm-angularjs/)
 RequireJS with Knockout | [requirejs-knockout](requirejs-knockout/)
 webpack with Knockout | [webpack-knockout](webpack-knockout/)
 jspm with Knockout | [jspm-knockout](jspm-knockout/)
+Angular Universal | [universal-angular](universal-angular/)
 
 ## DevExtreme Angular Integration
 
@@ -26,7 +27,7 @@ Used Technologies: | Example Name:
 ------------------ | --------------
 rollup with devextreme-angular | [rollup-angular](rollup-angular/)
 
-Example in this section demonstrate how create an application via angular-cli with [devextreme-angular](https://github.com/DevExpress/devextreme-angular) and [devextreme-intl](https://github.com/DevExpress/devextreme-intl).
+An example in this section demonstrates how create an application via angular-cli with [devextreme-angular](https://github.com/DevExpress/devextreme-angular) and [devextreme-intl](https://github.com/DevExpress/devextreme-intl).
 
 Used Technologies: | Example Name:
 ------------------ | --------------
@@ -38,6 +39,12 @@ Used Technologies: | Example Name:
 ------------------ | --------------
 SystemJS with Angular and Globalize | [systemjs-angular-globalize](systemjs-angular-globalize/)
 Webpack with Angular and Globalize | [webpack-angular-globalize](webpack-angular-globalize/)
+
+An example in this section demonstrates how create an Angular Univeral application via angular-cli with [devextreme-angular](https://github.com/DevExpress/devextreme-angular).
+
+Used Technologies: | Example Name:
+------------------ | --------------
+angular-universal with devextreme-angular and devextreme-intl | [universal-angular](universal-angular/)
 
 ## DataGrid and PivotGrid - Working with Remote Data
 
