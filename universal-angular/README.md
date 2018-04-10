@@ -1,9 +1,8 @@
 # Universal-Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) and then converted to Angular Universal.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) and then converted to [Angular Universal](https://angular.io/guide/universal).
 
-Read [this guide](https://github.com/DevExpress/devextreme-angular/blob/master/docs/using-angular-cli.md) for more information on how to create an application using the DevExtreme Angular Components with Angular CLI.
-For the information on creating an Angular universal application see the [Angular Universal: server-side rendering](https://angular.io/guide/universal) article.
+Read [this article](https://github.com/DevExpress/devextreme-angular#adding-devexteme-to-an-existing-angular-application) for the information on how to add DevExtreme Angular Components to an existing Angular application.
 
 ## Getting Started
 
