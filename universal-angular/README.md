@@ -1,7 +1,9 @@
 # Universal-Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli). 
-How to create an universal application you can see in this [article](https://angular.io/guide/universal). How using the DevExtreme Angular Components with Angular CLI you can see [here](https://github.com/DevExpress/devextreme-angular/blob/master/docs/using-angular-cli.md)
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) and then converted to Angular Universall.
+
+Read [this guide](https://github.com/DevExpress/devextreme-angular/blob/master/docs/using-angular-cli.md) for more information on how to create an application using the DevExtreme Angular Components with Angular CLI.
+For the information on creating an Angular universal application see the [Angular Universal: server-side rendering](https://angular.io/guide/universal) article.
 
 ## Getting Started
 
@@ -15,7 +17,7 @@ How to create an universal application you can see in this [article](https://ang
  cd devextreme-examples/universal-angular
  ```
 
-3. Install the required modules. This command will also convert the DevExtreme package to the AMD module format by using the npm postinstall script.
+3. Install the required modules. This command also convert the DevExtreme package to the AMD module format by using the npm postinstall script.
  ``` text
  npm install
  ```
