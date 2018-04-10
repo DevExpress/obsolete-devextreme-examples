@@ -40,7 +40,7 @@ Used Technologies: | Example Name:
 SystemJS with Angular and Globalize | [systemjs-angular-globalize](systemjs-angular-globalize/)
 Webpack with Angular and Globalize | [webpack-angular-globalize](webpack-angular-globalize/)
 
-An example in this section demonstrates how create an [Angular Univeral](https://universal.angular.io/) application via angular-cli with [devextreme-angular](https://github.com/DevExpress/devextreme-angular).
+An example in this section demonstrates how create an [Angular Univeral](https://angular.io/guide/universal) application via angular-cli with [devextreme-angular](https://github.com/DevExpress/devextreme-angular).
 
 Used Technologies: | Example Name:
 ------------------ | --------------
