@@ -30,3 +30,4 @@ npm run build:ssr
  ``` text
 npm run serve:ssr
  ```
+6. Navigate to [http://localhost:4000/](http://localhost:4000/)
