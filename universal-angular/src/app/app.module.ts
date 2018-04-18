@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import {
-  DevExtremeModule
+  DevExtremeModule,
+  DxServerTransferStateModule
 } from 'devextreme-angular';
 
 import { AppComponent } from './app.component';
@@ -30,6 +31,7 @@ import { FormsAndMultiPurposeComponent } from './forms-and-multi-purpose/forms-a
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     DevExtremeModule,
+    DxServerTransferStateModule,
     AppRoutingModule
   ],
   providers: [],
