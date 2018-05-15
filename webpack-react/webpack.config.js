@@ -1,5 +1,3 @@
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
 module.exports = {
   entry: "./app.jsx",
   output: {
@@ -39,8 +37,5 @@ module.exports = {
         use: "url-loader?name=[name].[ext]"
       }
     ]
-  },
-  plugins: [
-    new UglifyJsPlugin()
-  ]
+  }
 };
