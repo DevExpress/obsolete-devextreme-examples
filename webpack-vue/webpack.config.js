@@ -1,5 +1,4 @@
 const { VueLoaderPlugin } = require('vue-loader');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: "./index.js",
@@ -41,7 +40,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new VueLoaderPlugin(),
-    new UglifyJsPlugin()
+    new VueLoaderPlugin()
   ]
 };
