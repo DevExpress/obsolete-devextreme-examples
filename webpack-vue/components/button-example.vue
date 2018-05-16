@@ -1,5 +1,5 @@
 <template>
-  <dx-button :text='text'/>
+  <dx-button :text='text' icon='plus'/>
 </template>
 
 <script>
