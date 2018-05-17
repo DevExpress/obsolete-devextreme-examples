@@ -2,6 +2,7 @@ import 'devextreme/dist/css/dx.common.css!';
 import 'devextreme/dist/css/dx.light.css!';
 
 import $ from 'jquery';
+import 'devextreme/integration/jquery';
 import 'devextreme/ui/button';
 import dialog from 'devextreme/ui/dialog';
 
