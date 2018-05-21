@@ -5,7 +5,7 @@ declare module 'globalize' {
     export = value;
 }
 
-declare module 'cldr-data/*' {
+declare module 'devextreme-cldr-data/*' {
     const value: any;
     export = value;
 }
