@@ -7,7 +7,7 @@
     "knockout": "^3.4.2"
   },
   "devDependencies": {
-    "webpack": "^1.13.1"
+    "webpack": "^4.8.3"
   },
   "author": "DevExpress",
   "license": "MIT"
