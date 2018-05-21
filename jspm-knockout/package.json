@@ -16,9 +16,8 @@
   "jspm": {
     "dependencies": {
       "css": "github:systemjs/plugin-css@^0.1.22",
-      "devextreme": "npm:devextreme@18.1-unstable",
-      "jquery": "npm:jquery@^3.1.1",
-      "knockout": "npm:knockout@^3.4.0"
+      "devextreme": "npm:devextreme@^18.1.3",
+      "knockout": "npm:knockout@^3.4.2"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^6.24.1",
