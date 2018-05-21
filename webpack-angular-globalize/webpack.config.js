@@ -5,6 +5,7 @@ module.exports = {
   context: __dirname + "/src",
   entry: './main',
   output: {
+    path: path.resolve(__dirname, "dist"),
     filename: 'bundle.js'
   },
   resolve: {
@@ -31,10 +32,6 @@ module.exports = {
         loaders: [
           'awesome-typescript-loader'
         ]
-      },
-      {
-        test: /\.json$/,
-        loader: 'json-loader'
       }
     ]
   }

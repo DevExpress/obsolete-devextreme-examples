@@ -30,6 +30,7 @@ System.config({
     '@angular/router/testing': 'npm:@angular/router/bundles/router-testing.umd.js',
 
     'rxjs': 'npm:rxjs',
+    'rxjs/operators': 'npm:rxjs/operators/index.js',
     'typescript': 'npm:typescript/lib/typescript.js',
 
     // DevExtreme configuration
@@ -37,11 +38,11 @@ System.config({
     'jquery': 'npm:jquery/dist/jquery.min.js',
     'jszip': 'npm:jszip/dist/jszip.min.js',
     'devextreme-angular': 'npm:devextreme-angular',
+    'devextreme-cldr-data': 'npm:devextreme-cldr-data',
 
     // Globalize configuration
     'globalize': 'npm:globalize/dist/globalize',
     'cldr': 'npm:cldrjs/dist/cldr',
-    'cldr-data': 'npm:cldr-data',
     'json': 'npm:systemjs-plugin-json/json.js',
   },
 
@@ -51,6 +52,7 @@ System.config({
       defaultExtension: 'ts'
     },
     rxjs: {
+      main: 'index.js',
       defaultExtension: 'js'
     },
 

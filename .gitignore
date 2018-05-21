@@ -18,3 +18,4 @@ bundle.js
 systemjs-angular-globalize/dist
 rollup-angular/dist
 rollup-angular/src/aot
+webpack-angular-globalize/dist
