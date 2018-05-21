@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "DevExtreme with RequireJS and Knockout example",
   "dependencies": {
-    "devextreme": "18.1-unstable",
+    "devextreme": "^18.1.3",
     "r.js": "^1.0.3",
     "requirejs": "^2.2.0",
-    "jquery": "^3.1.1",
-    "knockout": "^3.4.0"
+    "knockout": "^3.4.2"
   },
   "scripts": {
     "postinstall": "r_js -convert node_modules/devextreme devextreme_amd"
