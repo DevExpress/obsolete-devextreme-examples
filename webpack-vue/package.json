@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "devextreme": "^18.1.4",
-    "devextreme-vue": "^18.1.4-alpha.6",
+    "devextreme-vue": "^18.1.4-alpha.7",
     "vue": "^2.5.16",
     "vue-template-compiler": "^2.5.16"
   }
