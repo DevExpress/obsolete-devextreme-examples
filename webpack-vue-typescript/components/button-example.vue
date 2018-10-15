@@ -1,11 +1,10 @@
 <template>
-  <dx-button :text='text' icon='plus'/>
+  <dx-button :text='text' icon='plus' ref='button' @click='click'/>
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from "vue-property-decorator";
-
 import { DxButton } from "devextreme-vue/ui/button";
+import { Vue, Component, Prop } from "vue-property-decorator";
 
 @Component({
   components: {
@@ -13,7 +12,18 @@ import { DxButton } from "devextreme-vue/ui/button";
   }
 })
 export default class ButtomExample extends Vue {
-  text = 'click me'
+  public $refs: Vue["$refs"] & {
+    button?: DxButton
+  } = {};
+
+  text = 'click me';
+
+  click() {
+    const button = this.$refs.button;
+    if(button) {
+      button.icon = button.icon === "plus" ? "box" : "plus";
+    }
+  };
 }
 </script>
 
