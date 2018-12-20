@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "DevExtreme with webpack and Knockout example",
   "dependencies": {
-    "devextreme": "^18.2.3",
+    "devextreme": "^18.2.4",
     "knockout": "^3.4.2"
   },
   "devDependencies": {

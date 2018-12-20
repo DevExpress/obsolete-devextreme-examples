@@ -22,8 +22,8 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "devextreme": "^18.2.3",
-    "devextreme-react": "^18.2.3",
+    "devextreme": "^18.2.4",
+    "devextreme-react": "^18.2.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   }
