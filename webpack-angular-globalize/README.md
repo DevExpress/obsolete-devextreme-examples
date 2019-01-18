@@ -21,7 +21,7 @@ This project demonstrates how to use DevExtreme Globalize integration in Webpack
 
 4. Bundle the modules
  ``` text
- webpack
+ npx webpack
  ```
 
 5. Open `index.html` in your browser
