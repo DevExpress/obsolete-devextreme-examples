@@ -21,7 +21,7 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
 
 4. Bundle the modules
  ``` text
- webpack
+ npx webpack
  ```
 
 5. Open `index.html` in your browser
