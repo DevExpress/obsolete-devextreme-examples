@@ -6,13 +6,15 @@ import alias from 'rollup-plugin-alias';
 
 import nodeResolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
-import uglify from 'rollup-plugin-uglify';
+import { uglify } from 'rollup-plugin-uglify';
 
 export default {
-    entry: 'dist/main.js',
-    dest: 'dist/bundle.js', // output a single application bundle
+    input: 'dist/main.js',
+    output: {
+        file: 'dist/bundle.js', // output a single application bundle
+        format: "iife"
+    },
     sourceMap: false,
-    format: 'iife',
     plugins: [
         css({ output: 'dist/bundle.css' }),
 
