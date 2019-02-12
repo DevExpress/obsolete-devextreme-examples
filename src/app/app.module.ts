@@ -3,12 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { DxDataGridModule } from 'devextreme-angular/ui/data-grid';
+
+import './localization';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DxDataGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
