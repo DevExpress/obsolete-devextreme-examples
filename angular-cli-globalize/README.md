@@ -1,27 +1,41 @@
-# AngularCliGlobalize
+# DevExtreme with Angular and Globalize example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+This project demonstrates how to use DevExtreme Globalize integration in an Angular application created via Angular CLI. This demo shows the DataGrid widget localized to `de` locale.
 
-## Development server
+DevExtreme Angular components [were added to a project](https://github.com/DevExpress/devextreme-angular#adding-devexteme-to-an-existing-angular-application) generated using [Angular CLI](https://github.com/angular/angular-cli) (version 7.3.1). Then, the Globalize, CLDR and JSZip (required for DataGrid) packages [were registered in the `tsconfig.json` file](https://github.com/DevExpress/devextreme-angular/blob/master/docs/setup-3rd-party-dependencies.md).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Note that starting from TypeScript 2.9, you don't need to provide ambient declarations for JSON files. Just enable the `compilerOptions.resolveJsonModule` and `compilerOptions.esModuleInterop` options in the `tsconfig.json` file.
 
-## Code scaffolding
+To make it easier to load culture-dependent CLDR data, this demo uses the [devextreme-cldr-data](https://www.npmjs.com/package/devextreme-cldr-data) package specially optimized for DevExtreme widgets.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For more information on localization in DevExtreme, refer to the [Common Concepts -> Localization](https://js.devexpress.com/Documentation/Guide/Common/Localization/) topic.
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. Clone the repository
+ ``` text
+ git clone https://github.com/devexpress/devextreme-examples.git
+ ```
 
-## Running unit tests
+2. Go to the project folder
+ ``` text
+ cd devextreme-examples/angular-cli-globalize
+ ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+3. Install the required NPM packages.
+ ``` text
+ npm install
+ ```
+ or
+ ``` text
+ yarn install
+ ```
+4. Run the example
+ ``` text
+npm run serve
+ ```
+ or
+ ``` text
+yarn run serve
+ ```
+6. Navigate to [http://localhost:4200/](http://localhost:4200/).
