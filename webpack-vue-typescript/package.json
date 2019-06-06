@@ -1,7 +1,7 @@
 {
-  "name": "devextreme-webpack-vue",
+  "name": "devextreme-webpack-vue-typescript",
   "version": "1.0.0",
-  "description": "DevExtreme with webpack and Vue example",
+  "description": "DevExtreme with webpack and Vue TypeScript example",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -21,7 +21,11 @@
   "dependencies": {
     "devextreme": "^18.1.6",
     "devextreme-vue": "^18.1.6-alpha.9",
+    "ts-loader": "^5.2.2",
+    "typescript": "^3.1.3",
     "vue": "^2.5.16",
+    "vue-class-component": "^6.3.0",
+    "vue-property-decorator": "^7.2.0",
     "vue-template-compiler": "^2.5.16"
   }
 }
