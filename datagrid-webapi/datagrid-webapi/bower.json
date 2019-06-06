@@ -2,7 +2,7 @@
   "name": "datagrid-webapi",
   "private": true,
   "dependencies": {
-    "jquery": "^3.0.0",
+    "jquery": "^3.4.1",
     "devextreme": "~18.2.4",
     "devextreme-aspnet-data": "^1.2.0"
   }
