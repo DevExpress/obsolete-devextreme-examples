@@ -1,30 +1,23 @@
 <template>
-  <dx-button :text='text' icon='plus' ref='button' @click='click'/>
+  <dx-button :text='text' :icon='icon' @click='onClick'/>
 </template>
 
 <script lang="ts">
 import { DxButton } from "devextreme-vue/ui/button";
-import { Vue, Component, Prop } from "vue-property-decorator";
+import { Vue, Component } from "vue-property-decorator";
 
 @Component({
   components: {
     DxButton
   }
 })
-export default class ButtomExample extends Vue {
-  public $refs: Vue["$refs"] & {
-    button?: DxButton
-  } = {};
+export default class ButtonExample extends Vue {
+  icon: "plus" | "box" = "plus";
 
   text = 'click me';
 
-  click() {
-    const button = this.$refs.button;
-    if(button) {
-      button.icon = button.icon === "plus" ? "box" : "plus";
-    }
+  onClick() {
+    this.icon = this.icon === "plus" ? "box" : "plus";
   };
 }
-</script>
-
 </script>
