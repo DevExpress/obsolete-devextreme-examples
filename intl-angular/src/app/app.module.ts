@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { DevExtremeModule } from 'devextreme-angular';
-import 'devextreme-intl';
 
 // Load localized messages (English included by default)
 import 'devextreme/dist/js/localization/dx.messages.de';
