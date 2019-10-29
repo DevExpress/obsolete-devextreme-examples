@@ -1,0 +1,11 @@
+{
+  "name": "datagrid-webapi",
+  "version": "1.0.0",
+  "private": true,
+  "author": "DevExpress",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "devextreme": "~19.2.3",
+    "devextreme-aspnet-data": "2.5.1"
+  }
+}
