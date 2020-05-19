@@ -19,14 +19,20 @@
         "jquery": "node_modules/jquery/dist/jquery",
         "knockout": "node_modules/knockout/build/output/knockout-latest",
         "devextreme": "devextreme_amd"
-      }
+      },
+      packages: [
+        {
+          name: "devextreme/events/utils",
+          main: "index"
+        }
+      ],
     });
 
-    require(["knockout", "devextreme/ui/dialog", "devextreme/integration/knockout", "devextreme/ui/button"], function(ko, dialog) {
+    require(["knockout", "devextreme/ui/dialog", "devextreme/integration/knockout", "devextreme/ui/button"], function (ko, dialog) {
       var viewModel = {
         buttonOptions: {
           text: "Say 'Hello world'",
-          onClick: function() {
+          onClick: function () {
             dialog.alert('Hello world!', '', false);
           }
         }

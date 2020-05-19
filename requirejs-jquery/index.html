@@ -19,14 +19,20 @@
       paths: {
         "jquery": "node_modules/jquery/dist/jquery",
         "devextreme": "devextreme_amd"
-      }
+      },
+      packages: [
+        {
+          name: "devextreme/events/utils",
+          main: "index"
+        }
+      ]
     });
 
-    require(["jquery", "devextreme/ui/dialog", "devextreme/ui/button", "devextreme/integration/jquery"], function($, dialog) {
+    require(["jquery", "devextreme/ui/dialog", "devextreme/ui/button", "devextreme/integration/jquery"], function ($, dialog) {
 
       $("#myButton").dxButton({
         text: "Say 'Hello world'",
-        onClick: function() {
+        onClick: function () {
           dialog.alert('Hello world!', '', false);
         }
       });

@@ -22,6 +22,12 @@
         "angular": "node_modules/angular/angular",
         "devextreme": "devextreme_amd"
       },
+      packages: [
+        {
+          name: "devextreme/events/utils",
+          main: "index"
+        }
+      ],
       shim: {
         "angular": {
           deps: ["jquery"],
@@ -33,20 +39,21 @@
       }
     });
 
-    require(["angular", "devextreme/ui/dialog", "devextreme/integration/angular", "devextreme/ui/button"], function(angular, dialog) {
+    require(
+      ["angular", "devextreme/ui/dialog", "devextreme/integration/angular", "devextreme/ui/button"],
+      function (angular, dialog) {
+        const myApp = angular.module('myApp', ['dx']);
+        myApp.controller("myController", function ($scope) {
+          $scope.buttonOptions = {
+            text: "Say 'Hello world'",
+            onClick: function () {
+              dialog.alert('Hello world!', '', false);
+            }
+          };
+        });
 
-      var myApp = angular.module('myApp', ['dx']);
-      myApp.controller("myController", function($scope) {
-        $scope.buttonOptions = {
-          text: "Say 'Hello world'",
-          onClick: function() {
-            dialog.alert('Hello world!', '', false);
-          }
-        };
+        angular.bootstrap(document, ['myApp']);
       });
-
-      angular.bootstrap(document, ['myApp']);
-    });
   </script>
 </body>
 

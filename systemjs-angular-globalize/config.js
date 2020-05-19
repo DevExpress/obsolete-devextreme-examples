@@ -1,13 +1,22 @@
 System.config({
-  meta: {typescript: {format: 'global'}},
-  transpiler: 'typescript',
+  transpiler: 'ts',
   typescriptOptions: {
-    emitDecoratorMetadata: true
+    module: "system",
+    emitDecoratorMetadata: true,
+    experimentalDecorators: true
+  },
+  meta: {
+    'typescript': {
+      "exports": "ts"
+    }
   },
   paths: {
-    'npm:': 'node_modules/'
+    'npm:': './node_modules/'
   },
   map: {
+    'ts': 'npm:plugin-typescript/lib/plugin.js',
+    'typescript': 'npm:typescript/lib/typescript.js',
+
     'app': './src',
 
     '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
@@ -18,7 +27,6 @@ System.config({
     '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
     '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
     '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
-    'tslib': 'npm:tslib/tslib.js',
 
     '@angular/core/testing': 'npm:@angular/core/bundles/core-testing.umd.js',
     '@angular/common/testing': 'npm:@angular/common/bundles/common-testing.umd.js',
@@ -34,7 +42,6 @@ System.config({
 
     // DevExtreme configuration
     'devextreme': 'npm:devextreme',
-    'jquery': 'npm:jquery/dist/jquery.min.js',
     'jszip': 'npm:jszip/dist/jszip.min.js',
     'devextreme-angular': 'npm:devextreme-angular',
     'devextreme-cldr-data': 'npm:devextreme-cldr-data',
@@ -56,12 +63,14 @@ System.config({
     },
 
     // DevExtreme configuration
-    'devextreme-angular': {
-      main: 'index.js',
-      defaultExtension: 'js'
-    },
     'devextreme': {
       defaultExtension: 'js'
+    },
+    'devextreme/events/utils': {
+      main: 'index'
+    },
+    'devextreme/events': {
+      main: 'index'
     },
 
     // Globalize configuration
@@ -73,5 +82,11 @@ System.config({
       main: '../cldr.js',
       defaultExtension: 'js'
     }
-  }
+  },
+  packageConfigPaths: [
+    "./node_modules/@angular/*/package.json",
+    "./node_modules/rxjs/operators/package.json",
+    "./node_modules/devextreme-angular/*/package.json",
+    "./node_modules/devextreme-angular/ui/*/package.json"
+  ]
 });
