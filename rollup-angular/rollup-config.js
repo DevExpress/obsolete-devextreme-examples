@@ -29,7 +29,17 @@ export default {
                 './node_modules/jszip/**',
                 './node_modules/devextreme/**',
                 './node_modules/devextreme-angular/**'
-            ]
+            ],
+            namedExports: {
+                // left-hand side can be an absolute path, a path
+                // relative to the current directory, or the name
+                // of a module in node_modules
+                './node_modules/devextreme/core/dom_adapter.js': ['removeElement', 'inject'],
+                './node_modules/devextreme/core/utils/ready_callbacks.js': ['inject', 'fire'],
+                './node_modules/devextreme/core/http_request.js': ['inject'],
+                './node_modules/devextreme/events/core/events_engine.js': ['set'],
+                './node_modules/devextreme/core/utils/ajax.js': ['inject'],
+              }
         }),
         uglify()
     ],
