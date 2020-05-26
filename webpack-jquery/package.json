@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "DevExtreme with webpack and jQuery example",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "devextreme": "^19.2.3"
   },
   "devDependencies": {
