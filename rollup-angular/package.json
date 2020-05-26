@@ -22,7 +22,7 @@
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-uglify": "^6.0.2",
     "rxjs": "^6.0.0",
-    "typescript": "~3.4.1",
+    "typescript": "~3.5.1",
     "zone.js": "^0.8.26"
   },
   "scripts": {

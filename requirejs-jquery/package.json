@@ -4,7 +4,7 @@
   "description": "DevExtreme with RequireJS and jQuery example",
   "dependencies": {
     "devextreme": "^19.2.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "r.js": "^1.0.3",
     "requirejs": "^2.2.0"
   },
