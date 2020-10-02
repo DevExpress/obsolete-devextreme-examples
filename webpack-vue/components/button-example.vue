@@ -1,18 +1,19 @@
 <template>
-  <dx-button :text='text' icon='plus'/>
+    <dx-button
+    text="click me"
+    v-on:click="greet" />
 </template>
 
 <script>
-
 import { DxButton } from "devextreme-vue/ui/button";
 
 export default {
   components: {
     DxButton
   },
-  data: function() {
-    return {
-      text: 'click me' 
+  methods: {
+    greet: function () {
+      alert("Hello!");
     }
   }
 };

@@ -1,15 +1,13 @@
 <template>
-    <button-example/>
+  <button-example />
 </template>
 
 <script>
-
 import ButtonExample from "./components/button-example";
 
 export default {
-    components: {
-        ButtonExample
-    },
-    name: "app"
-}
+  components: {
+    ButtonExample
+  }
+};
 </script>

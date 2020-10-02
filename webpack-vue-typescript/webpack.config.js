@@ -13,7 +13,7 @@ module.exports = {
   resolve: {
     extensions: [".webpack.js", ".web.js", ".ts", ".vue", ".js"],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.cjs.js'
     }
   },
   mode: "production",
