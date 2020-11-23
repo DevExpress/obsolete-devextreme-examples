@@ -20,8 +20,8 @@
   },
   "dependencies": {
     "@vue/compiler-sfc": "^3.0.0-alpha.11",
-    "devextreme": "^20.2.2-beta",
-    "devextreme-vue": "^20.2.2-beta",
+    "devextreme": "^20.2.3",
+    "devextreme-vue": "^20.2.3",
     "vue": "^3.0.0",
     "vue-template-compiler": "^2.5.16"
   }
