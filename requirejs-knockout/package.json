@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "DevExtreme with RequireJS and Knockout example",
   "dependencies": {
-    "devextreme": "^20.2.3",
+    "devextreme": "^21.1.3",
     "r.js": "^1.0.3",
     "requirejs": "^2.2.0",
     "knockout": "^3.4.2"
