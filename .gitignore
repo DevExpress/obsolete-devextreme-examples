@@ -10,6 +10,7 @@ jspm_packages
 
 # AMD
 devextreme_amd
+@devextreme
 
 # Webpack bundles
 bundle.js

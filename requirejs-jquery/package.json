@@ -9,7 +9,7 @@
     "requirejs": "^2.2.0"
   },
   "scripts": {
-    "postinstall": "r_js -convert node_modules/devextreme/cjs devextreme_amd"
+    "postinstall": "r_js -convert node_modules/devextreme/cjs devextreme_amd && r_js -convert node_modules/@devextreme/runtime/cjs/inferno @devextreme/runtime/inferno_amd"
   },
   "author": "Developer Express Inc.",
   "license": "MIT"

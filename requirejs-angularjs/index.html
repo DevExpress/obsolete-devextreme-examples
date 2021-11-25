@@ -4,8 +4,8 @@
 <head>
   <title>DevExtreme with RequireJS and AngularJS example</title>
 
-  <link rel="stylesheet" type="text/css" href="devextreme_amd/dist/css/dx.common.css" />
-  <link rel="stylesheet" type="text/css" href="devextreme_amd/dist/css/dx.light.css" />
+  <link rel="stylesheet" type="text/css" href="node_modules/devextreme/dist/css/dx.common.css" />
+  <link rel="stylesheet" type="text/css" href="node_modules/devextreme/dist/css/dx.light.css" />
   <script src="node_modules/requirejs/require.js"></script>
 </head>
 
@@ -20,11 +20,19 @@
       paths: {
         "jquery": "node_modules/jquery/dist/jquery",
         "angular": "node_modules/angular/angular",
-        "devextreme": "devextreme_amd"
+        "devextreme": "devextreme_amd",
+        "inferno-create-element": "node_modules/inferno-create-element/dist/inferno-create-element",
+        "inferno-hydrate": "node_modules/inferno-hydrate/dist/inferno-hydrate",
+        "inferno": "node_modules/inferno/dist/inferno",
+        "@devextreme/runtime/inferno": "@devextreme/runtime/inferno_amd",
       },
       packages: [
         {
           name: "devextreme/events/utils",
+          main: "index"
+        },
+        {
+          name: "@devextreme/runtime/inferno",
           main: "index"
         }
       ],
