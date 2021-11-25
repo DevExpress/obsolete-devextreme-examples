@@ -9,7 +9,7 @@
     "knockout": "^3.4.2"
   },
   "scripts": {
-    "postinstall": "r_js -convert node_modules/devextreme/cjs devextreme_amd && r_js -convert node_modules/@devextreme/runtime/cjs/inferno @devextreme_inferno_amd"
+    "postinstall": "r_js -convert node_modules/devextreme/cjs devextreme_amd && r_js -convert node_modules/@devextreme/runtime/cjs/inferno @devextreme/runtime/inferno_amd"
   },
   "author": "DevExpress",
   "license": "MIT"
