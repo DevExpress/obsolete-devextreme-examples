@@ -1,0 +1,21 @@
+{
+  "name": "devextreme-webpack-vue",
+  "version": "1.0.0",
+  "description": "DevExtreme with webpack and Vue example",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "author": "DevExpress",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.0.0-alpha.11",
+    "devextreme": "^22.2.3",
+    "devextreme-vue": "^22.2.3",
+    "vue": "^3.0.0",
+    "vue-template-compiler": "^2.5.16"
+  }
+}
