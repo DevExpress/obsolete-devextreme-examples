@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { DxButton } from "devextreme-vue/ui/button";
+import { DxButton } from "../dist/devextreme-vue-bundle.mjs";
 
 export default {
   components: {
