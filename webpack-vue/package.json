@@ -4,7 +4,7 @@
   "description": "DevExtreme with webpack and Vue example",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "vite build",
     "serve": "webpack-dev-server"
   },
   "author": "DevExpress",
@@ -13,6 +13,7 @@
     "css-loader": "^0.28.11",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
+    "vite": "^4.0.4",
     "vue-loader": "^16.0.0-beta.7",
     "webpack": "^4.8.3",
     "webpack-cli": "^3.1.1",
