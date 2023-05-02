@@ -21,8 +21,8 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "node_modules/devextreme/dist/css/dx.common.css",
-              "node_modules/devextreme/dist/css/dx.light.css",
+              "node_modules/devextreme-dist/css/dx.common.css",
+              "node_modules/devextreme-dist/css/dx.light.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -73,8 +73,8 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [],
             "styles": [
-              "node_modules/devextreme/dist/css/dx.common.css",
-              "node_modules/devextreme/dist/css/dx.light.css",
+              "node_modules/devextreme-dist/css/dx.common.css",
+              "node_modules/devextreme-dist/css/dx.light.css",
               "src/styles.css"
             ],
             "assets": [

@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import { DevExtremeModule } from 'devextreme-angular';
 
 // Load localized messages (English included by default)
-import 'devextreme/dist/js/localization/dx.messages.de';
-import 'devextreme/dist/js/localization/dx.messages.ja';
-import 'devextreme/dist/js/localization/dx.messages.ru';
+import 'devextreme-dist/js/localization/dx.messages.de';
+import 'devextreme-dist/js/localization/dx.messages.ja';
+import 'devextreme-dist/js/localization/dx.messages.ru';
 
 // Set locale according the browser language
 import { locale } from 'devextreme/localization';

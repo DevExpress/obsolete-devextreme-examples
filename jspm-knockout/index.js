@@ -1,5 +1,5 @@
-import 'devextreme/dist/css/dx.common.css!';
-import 'devextreme/dist/css/dx.light.css!';
+import 'devextreme-dist/css/dx.common.css!';
+import 'devextreme-dist/css/dx.light.css!';
 
 import ko from 'knockout';
 import 'devextreme/integration/knockout';

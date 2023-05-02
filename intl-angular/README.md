@@ -32,8 +32,8 @@ npm install devextreme devextreme-angular devextreme-intl --save
 "styles": [
     "styles.css",
     //add DevExteme styles
-    "../node_modules/devextreme/dist/css/dx.common.css",
-    "../node_modules/devextreme/dist/css/dx.light.css"
+    "../node_modules/devextreme-dist/css/dx.common.css",
+    "../node_modules/devextreme-dist/css/dx.light.css"
 ],
 ```
 * Add service providing data to your application

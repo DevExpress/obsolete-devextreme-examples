@@ -1,5 +1,5 @@
-import 'devextreme/dist/css/dx.common.css!';
-import 'devextreme/dist/css/dx.light.css!';
+import 'devextreme-dist/css/dx.common.css!';
+import 'devextreme-dist/css/dx.light.css!';
 
 import angular from 'angular';
 import 'devextreme/integration/angular';
