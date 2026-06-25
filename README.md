@@ -1,11 +1,6 @@
-# This repository is obsolete
+# [Archived] DevExtreme Examples
 
-This repository previously stored a set of sample applications that can help you get started with DevExtreme. The examples were moved to the following repositories:
+This repository has been archived and will no longer receive content updates. We will continue publishing DevExtreme sample applications in the following locations:
 
-- [DevExtreme with Webpack](DevExpress-Examples/devextreme-webpack-examples)
-- [DevExtreme with JSPM](DevExpress-Examples/devextreme-jspm-examples)
-- [DevExtreme with RequireJS](DevExpress-Examples/devextreme-requirejs-examples)
-- [PivotGrid for DevExtreme - How to use PivotGrid with a WebAPI](DevExpress-Examples/devextreme-pivotgrid-with-webapi)
-- [DataGrid for DevExtreme - How to use DataGrid with a WebAPI](DevExpress-Examples/devextreme-datagrid-with-webapi)
-- [DataGrid for DevExtreme - How to use DataGrid in an MVC 5 App](DevExpress-Examples/devextreme-datagrid-mvc5)
-- [DevExtreme with Vite - How to create a bundle with DevExtreme Vue components](DevExpress-Examples/devextreme-vite-vue-bundling)
+- [DevExpress-Examples on GitHub](https://github.com/DevExpress-Examples?q=devextreme&type=all&language=&sort=)
+- [DevExpress Support Center](https://go.devexpress.com/SupportCenter_DevExtreme_Examples.aspx)
